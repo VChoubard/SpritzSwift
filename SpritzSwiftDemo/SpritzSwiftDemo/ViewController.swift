@@ -7,45 +7,116 @@
 //
 
 import UIKit
+import SnapKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var playButton: UIButton!
+    let playButton = UIButton()
+    let pauseButton = UIButton()
+    let resumeButton = UIButton()
     
     private var ssView: SSView?
+    private var manager = SSManager(withText: "Welcome to SwiftSpritz! Spritz is a brand new revolutionary reading method that will help you to improve your number of words per minute. Take a look at SwiftSpritz!", andWordPerMinute: 250)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        ssView = SSView(frame: CGRect(x: 20, y: 20, width: 200, height: 40 ))
-        ssView!.center = CGPoint(x: UIScreen.main.bounds.size.width/2, y: 100)
-        ssView!.defaultWord = SSWord(withWord: "Spritz")
         
+        ssView = SSView(frame: CGRect(x: 20, y: 20, width: 200, height: 40 ), delegate: self)
+        ssView!.initWord = SSWord(withWord: "Spritz")
+        ssView!.backgroundColor = .clear
         self.view.addSubview(ssView!)
-        self.view.backgroundColor = UIColor.clear
-        let blurBar = UIToolbar(frame: self.view.frame)
-        blurBar.barStyle = UIBarStyle.default
-        self.view.addSubview(blurBar)
-        self.view.sendSubview(toBack: blurBar)
+        
+        ssView?.snp.makeConstraints { (make) -> Void in
+            make.height.equalTo(40)
+            make.left.equalTo(self.view.snp.left).inset(20)
+            make.right.equalTo(self.view.snp.right).inset(20)
+            make.center.equalTo(self.view)
+        }
+        
+        playButton.backgroundColor = .white
+        playButton.setTitle("Play", for: .normal)
+        playButton.setTitleColor(.black, for: .normal)
+        self.view.addSubview(playButton)
+        
+        playButton.snp.makeConstraints { (make) -> Void in
+            make.height.equalTo(40)
+            make.width.equalTo(100)
+            make.top.equalTo(ssView!.snp.bottom).inset(-16)
+            make.left.equalTo(ssView!.snp.left)
+        }
+        
+        pauseButton.backgroundColor = .white
+        pauseButton.setTitle("Pause", for: .normal)
+        pauseButton.setTitleColor(.black, for: .normal)
+        self.view.addSubview(pauseButton)
+        
+        pauseButton.snp.makeConstraints { (make) -> Void in
+            make.height.equalTo(40)
+            make.width.equalTo(100)
+            make.top.equalTo(ssView!.snp.bottom).inset(-16)
+            make.left.equalTo(playButton.snp.right).offset(10)
+        }
+        
+        resumeButton.backgroundColor = .white
+        resumeButton.setTitle("Resume", for: .normal)
+        resumeButton.setTitleColor(.black, for: .normal)
+        self.view.addSubview(resumeButton)
+        
+        resumeButton.snp.makeConstraints { (make) -> Void in
+            make.height.equalTo(40)
+            make.width.equalTo(100)
+            make.top.equalTo(ssView!.snp.bottom).inset(-16)
+            make.left.equalTo(pauseButton.snp.right).offset(10)
+        }
+        
+        self.view.backgroundColor = UIColor.gray
         
         playButton.addTarget(self, action: #selector(toggleSpritz) , for: UIControlEvents.touchUpInside)
-        // Do any additional setup after loading the view, typically from a nib.
+        resumeButton.addTarget(self, action: #selector(resumeSpritz), for: UIControlEvents.touchUpInside)
+        pauseButton.addTarget(self, action: #selector(pauseSpritz), for: UIControlEvents.touchUpInside)
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @objc
+    func pauseSpritz() {
+        manager.pauseReading()
+    }
+    
+    @objc
+    func resumeSpritz() {
+        manager.resumeReading()
+    }
 
     @objc
     func toggleSpritz() {
-        let manager = SSManager(withText: "hey nacho how are you, I hope very good", andWordPerMinute: 300)
-        manager.updateLabel { (word, finished) in
+        manager.startReading { (word, finished) in
             if !finished {
                 self.ssView?.updateWord(word!)
             }
         }
     }
-    
+}
+
+extension ViewController: SSViewPresentationDelegate {
+    func getMarkerOffset() -> CGFloat {
+        return ssView!.frame.size.width/3
+    }
+    func getMarkerLength() -> CGFloat {
+        return 5
+    }
+    func getMarkerColor() -> UIColor {
+        return .red
+    }
+    func getLinesColor() -> UIColor {
+        return .black
+    }
+    func getTextColor() -> UIColor {
+        return .black
+    }
 }
 
