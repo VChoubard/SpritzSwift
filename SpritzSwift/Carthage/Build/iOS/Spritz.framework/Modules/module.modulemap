@@ -1,0 +1,11 @@
+framework module Spritz {
+  umbrella header "Spritz.h"
+
+  export *
+  module * { export * }
+}
+
+module Spritz.Swift {
+    header "Spritz-Swift.h"
+    requires objc
+}
