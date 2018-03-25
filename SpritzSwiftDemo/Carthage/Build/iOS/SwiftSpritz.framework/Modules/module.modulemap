@@ -1,0 +1,11 @@
+framework module SwiftSpritz {
+  umbrella header "SwiftSpritz.h"
+
+  export *
+  module * { export * }
+}
+
+module SwiftSpritz.Swift {
+    header "SwiftSpritz-Swift.h"
+    requires objc
+}
