@@ -3,6 +3,8 @@ Spritz reading framework translate and optimized from AFSpritz.
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
+![alt text](https://media.giphy.com/media/18Tb56ycWSOg2cDGU2/giphy.gif "Example")
+
 ## Installation
 
 ### Carthage
