@@ -21,6 +21,10 @@ public class SSManager {
             self.isValid = timer.isValid
         }
         
+        func invalidate() {
+            self.timer.invalidate()
+        }
+        
         func pause() {
             pauseDate = Date()
             previousFireDate = self.timer.fireDate
@@ -62,7 +66,8 @@ public class SSManager {
     public func startReading(completion: @escaping StatusBlock) {
         current = 0
 
-        guard let timer = timer, timer.isValid else {
+        guard let timer = timer, timer.isValid, status != .stopped else {
+            self.timer?.invalidate()
             self.timer = SSTimer(timer: Timer.scheduledTimer(withTimeInterval: self.speed, repeats: true, block: { (timer) in
                 if (self.current != self.words.count) {
                     if (self.current > 0) {
