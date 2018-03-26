@@ -27,7 +27,7 @@ In your Xcode project add `SpritzSwift.framework` into `Embedded Binaries`
 
 ### Manually
 
-Just import these files to your project:
+Just import those files to your project:
 
     SSView.swift
     SSLabel.swift
@@ -35,6 +35,7 @@ Just import these files to your project:
     SSManager.swift
     SSWord.swift
 
+---
 
 ## Usage
 
