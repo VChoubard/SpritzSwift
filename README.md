@@ -1,6 +1,8 @@
 # SpritzSwift
 Spritz reading framework translate and optimized from AFSpritz.
 
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+
 ## Installation
 
 ### Carthage
@@ -114,7 +116,7 @@ You can implement the  SSViewPresentationDelegate and pass it to the SSView cons
 
         // Determines the font of the text.
         @objc optional func getTextFont() -> UIFont
-        
+
     }
 
 ## Author
