@@ -1,0 +1,724 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B927B882069147F007CEE2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B927B872069147F007CEE2C /* AppDelegate.swift */; };
+		5B927B8A2069147F007CEE2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B927B892069147F007CEE2C /* ViewController.swift */; };
+		5B927B8D2069147F007CEE2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B927B8B2069147F007CEE2C /* Main.storyboard */; };
+		5B927B8F2069147F007CEE2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B927B8E2069147F007CEE2C /* Assets.xcassets */; };
+		5B927B922069147F007CEE2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B927B902069147F007CEE2C /* LaunchScreen.storyboard */; };
+		5B927BA520691535007CEE2C /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B927B7D20691210007CEE2C /* SnapKit.framework */; };
+		5B927BA620691535007CEE2C /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B927B7D20691210007CEE2C /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5B927BA820691553007CEE2C /* SSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B927B73206911CB007CEE2C /* SSLabel.swift */; };
+		5B927BA920691557007CEE2C /* SSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B927B74206911CB007CEE2C /* SSView.swift */; };
+		5B927BAA2069155B007CEE2C /* SSWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B927B75206911CB007CEE2C /* SSWord.swift */; };
+		5B927BAB2069155E007CEE2C /* SSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B927B76206911CB007CEE2C /* SSManager.swift */; };
+		5B927BAC20691563007CEE2C /* SSViewPresentationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B927B77206911CB007CEE2C /* SSViewPresentationDelegate.swift */; };
+		5B927BBB20691602007CEE2C /* SpritzSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B927BB220691602007CEE2C /* SpritzSwift.framework */; };
+		5B927BC220691602007CEE2C /* SpritzSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B927BC120691602007CEE2C /* SpritzSwiftTests.swift */; };
+		5B927BC420691603007CEE2C /* SpritzSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B927BB420691602007CEE2C /* SpritzSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B927BC720691603007CEE2C /* SpritzSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B927BB220691602007CEE2C /* SpritzSwift.framework */; };
+		5B927BC820691603007CEE2C /* SpritzSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B927BB220691602007CEE2C /* SpritzSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5B927BCF20691628007CEE2C /* SSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B927B73206911CB007CEE2C /* SSLabel.swift */; };
+		5B927BD020691628007CEE2C /* SSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B927B74206911CB007CEE2C /* SSView.swift */; };
+		5B927BD120691628007CEE2C /* SSWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B927B75206911CB007CEE2C /* SSWord.swift */; };
+		5B927BD220691628007CEE2C /* SSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B927B76206911CB007CEE2C /* SSManager.swift */; };
+		5B927BD320691628007CEE2C /* SSViewPresentationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B927B77206911CB007CEE2C /* SSViewPresentationDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5B927BBC20691602007CEE2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B927B4220691077007CEE2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B927BB120691602007CEE2C;
+			remoteInfo = SpritzSwift;
+		};
+		5B927BBE20691602007CEE2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B927B4220691077007CEE2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B927B842069147F007CEE2C;
+			remoteInfo = SpritzSwiftDemo;
+		};
+		5B927BC520691603007CEE2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B927B4220691077007CEE2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B927BB120691602007CEE2C;
+			remoteInfo = SpritzSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5B927BA720691535007CEE2C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5B927BC820691603007CEE2C /* SpritzSwift.framework in Embed Frameworks */,
+				5B927BA620691535007CEE2C /* SnapKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5B927B5420691077007CEE2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5B927B5720691077007CEE2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5B927B5920691077007CEE2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B927B6220691077007CEE2C /* SpritzSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpritzSwiftTests.swift; sourceTree = "<group>"; };
+		5B927B6420691077007CEE2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B927B6D2069119D007CEE2C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5B927B6E2069119D007CEE2C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5B927B73206911CB007CEE2C /* SSLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSLabel.swift; sourceTree = "<group>"; };
+		5B927B74206911CB007CEE2C /* SSView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSView.swift; sourceTree = "<group>"; };
+		5B927B75206911CB007CEE2C /* SSWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSWord.swift; sourceTree = "<group>"; };
+		5B927B76206911CB007CEE2C /* SSManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSManager.swift; sourceTree = "<group>"; };
+		5B927B77206911CB007CEE2C /* SSViewPresentationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSViewPresentationDelegate.swift; sourceTree = "<group>"; };
+		5B927B7D20691210007CEE2C /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = SpritzSwiftDemo/SnapKit.framework; sourceTree = "<group>"; };
+		5B927B852069147F007CEE2C /* SpritzSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpritzSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B927B872069147F007CEE2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5B927B892069147F007CEE2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5B927B8C2069147F007CEE2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5B927B8E2069147F007CEE2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5B927B912069147F007CEE2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5B927B932069147F007CEE2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B927B9C2069147F007CEE2C /* SpritzSwiftDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpritzSwiftDemoTests.swift; sourceTree = "<group>"; };
+		5B927B9E2069147F007CEE2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B927BB220691602007CEE2C /* SpritzSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpritzSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B927BB420691602007CEE2C /* SpritzSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpritzSwift.h; sourceTree = "<group>"; };
+		5B927BB520691602007CEE2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B927BBA20691602007CEE2C /* SpritzSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpritzSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B927BC120691602007CEE2C /* SpritzSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpritzSwiftTests.swift; sourceTree = "<group>"; };
+		5B927BC320691603007CEE2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B927B822069147F007CEE2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B927BC720691603007CEE2C /* SpritzSwift.framework in Frameworks */,
+				5B927BA520691535007CEE2C /* SnapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B927BAE20691602007CEE2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B927BB720691602007CEE2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B927BBB20691602007CEE2C /* SpritzSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B927B4120691077007CEE2C = {
+			isa = PBXGroup;
+			children = (
+				5B927B7D20691210007CEE2C /* SnapKit.framework */,
+				5B927B72206911CB007CEE2C /* Source */,
+				5B927B4C20691077007CEE2C /* SpritzSwiftDemo */,
+				5B927B6120691077007CEE2C /* SpritzSwiftTests */,
+				5B927B862069147F007CEE2C /* SpritzSwiftDemo */,
+				5B927B9B2069147F007CEE2C /* SpritzSwiftDemoTests */,
+				5B927BB320691602007CEE2C /* SpritzSwift */,
+				5B927BC020691602007CEE2C /* SpritzSwiftTests */,
+				5B927B4B20691077007CEE2C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5B927B4B20691077007CEE2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B927B852069147F007CEE2C /* SpritzSwiftDemo.app */,
+				5B927BB220691602007CEE2C /* SpritzSwift.framework */,
+				5B927BBA20691602007CEE2C /* SpritzSwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B927B4C20691077007CEE2C /* SpritzSwiftDemo */ = {
+			isa = PBXGroup;
+			children = (
+				5B927B6E2069119D007CEE2C /* AppDelegate.swift */,
+				5B927B6D2069119D007CEE2C /* ViewController.swift */,
+				5B927B5420691077007CEE2C /* Assets.xcassets */,
+				5B927B5620691077007CEE2C /* LaunchScreen.storyboard */,
+				5B927B5920691077007CEE2C /* Info.plist */,
+			);
+			path = SpritzSwiftDemo;
+			sourceTree = "<group>";
+		};
+		5B927B6120691077007CEE2C /* SpritzSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				5B927B6220691077007CEE2C /* SpritzSwiftTests.swift */,
+				5B927B6420691077007CEE2C /* Info.plist */,
+			);
+			path = SpritzSwiftTests;
+			sourceTree = "<group>";
+		};
+		5B927B72206911CB007CEE2C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				5B927B73206911CB007CEE2C /* SSLabel.swift */,
+				5B927B74206911CB007CEE2C /* SSView.swift */,
+				5B927B75206911CB007CEE2C /* SSWord.swift */,
+				5B927B76206911CB007CEE2C /* SSManager.swift */,
+				5B927B77206911CB007CEE2C /* SSViewPresentationDelegate.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		5B927B862069147F007CEE2C /* SpritzSwiftDemo */ = {
+			isa = PBXGroup;
+			children = (
+				5B927B872069147F007CEE2C /* AppDelegate.swift */,
+				5B927B892069147F007CEE2C /* ViewController.swift */,
+				5B927B8B2069147F007CEE2C /* Main.storyboard */,
+				5B927B8E2069147F007CEE2C /* Assets.xcassets */,
+				5B927B902069147F007CEE2C /* LaunchScreen.storyboard */,
+				5B927B932069147F007CEE2C /* Info.plist */,
+			);
+			path = SpritzSwiftDemo;
+			sourceTree = "<group>";
+		};
+		5B927B9B2069147F007CEE2C /* SpritzSwiftDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				5B927B9C2069147F007CEE2C /* SpritzSwiftDemoTests.swift */,
+				5B927B9E2069147F007CEE2C /* Info.plist */,
+			);
+			path = SpritzSwiftDemoTests;
+			sourceTree = "<group>";
+		};
+		5B927BB320691602007CEE2C /* SpritzSwift */ = {
+			isa = PBXGroup;
+			children = (
+				5B927BB420691602007CEE2C /* SpritzSwift.h */,
+				5B927BB520691602007CEE2C /* Info.plist */,
+			);
+			path = SpritzSwift;
+			sourceTree = "<group>";
+		};
+		5B927BC020691602007CEE2C /* SpritzSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				5B927BC120691602007CEE2C /* SpritzSwiftTests.swift */,
+				5B927BC320691603007CEE2C /* Info.plist */,
+			);
+			path = SpritzSwiftTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5B927BAF20691602007CEE2C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B927BC420691603007CEE2C /* SpritzSwift.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5B927B842069147F007CEE2C /* SpritzSwiftDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B927B9F2069147F007CEE2C /* Build configuration list for PBXNativeTarget "SpritzSwiftDemo" */;
+			buildPhases = (
+				5B927B812069147F007CEE2C /* Sources */,
+				5B927B822069147F007CEE2C /* Frameworks */,
+				5B927B832069147F007CEE2C /* Resources */,
+				5B927BA720691535007CEE2C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B927BC620691603007CEE2C /* PBXTargetDependency */,
+			);
+			name = SpritzSwiftDemo;
+			productName = SpritzSwiftDemo;
+			productReference = 5B927B852069147F007CEE2C /* SpritzSwiftDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5B927BB120691602007CEE2C /* SpritzSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B927BC920691603007CEE2C /* Build configuration list for PBXNativeTarget "SpritzSwift" */;
+			buildPhases = (
+				5B927BAD20691602007CEE2C /* Sources */,
+				5B927BAE20691602007CEE2C /* Frameworks */,
+				5B927BAF20691602007CEE2C /* Headers */,
+				5B927BB020691602007CEE2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpritzSwift;
+			productName = SpritzSwift;
+			productReference = 5B927BB220691602007CEE2C /* SpritzSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5B927BB920691602007CEE2C /* SpritzSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B927BCC20691603007CEE2C /* Build configuration list for PBXNativeTarget "SpritzSwiftTests" */;
+			buildPhases = (
+				5B927BB620691602007CEE2C /* Sources */,
+				5B927BB720691602007CEE2C /* Frameworks */,
+				5B927BB820691602007CEE2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B927BBD20691602007CEE2C /* PBXTargetDependency */,
+				5B927BBF20691602007CEE2C /* PBXTargetDependency */,
+			);
+			name = SpritzSwiftTests;
+			productName = SpritzSwiftTests;
+			productReference = 5B927BBA20691602007CEE2C /* SpritzSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B927B4220691077007CEE2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Vincent Choubard";
+				TargetAttributes = {
+					5B927B842069147F007CEE2C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					5B927BB120691602007CEE2C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					5B927BB920691602007CEE2C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5B927B842069147F007CEE2C;
+					};
+				};
+			};
+			buildConfigurationList = 5B927B4520691077007CEE2C /* Build configuration list for PBXProject "SpritzSwift" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5B927B4120691077007CEE2C;
+			productRefGroup = 5B927B4B20691077007CEE2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B927B842069147F007CEE2C /* SpritzSwiftDemo */,
+				5B927BB120691602007CEE2C /* SpritzSwift */,
+				5B927BB920691602007CEE2C /* SpritzSwiftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B927B832069147F007CEE2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B927B922069147F007CEE2C /* LaunchScreen.storyboard in Resources */,
+				5B927B8F2069147F007CEE2C /* Assets.xcassets in Resources */,
+				5B927B8D2069147F007CEE2C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B927BB020691602007CEE2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B927BB820691602007CEE2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B927B812069147F007CEE2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B927BA920691557007CEE2C /* SSView.swift in Sources */,
+				5B927BAB2069155E007CEE2C /* SSManager.swift in Sources */,
+				5B927BA820691553007CEE2C /* SSLabel.swift in Sources */,
+				5B927BAA2069155B007CEE2C /* SSWord.swift in Sources */,
+				5B927B8A2069147F007CEE2C /* ViewController.swift in Sources */,
+				5B927BAC20691563007CEE2C /* SSViewPresentationDelegate.swift in Sources */,
+				5B927B882069147F007CEE2C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B927BAD20691602007CEE2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B927BCF20691628007CEE2C /* SSLabel.swift in Sources */,
+				5B927BD020691628007CEE2C /* SSView.swift in Sources */,
+				5B927BD120691628007CEE2C /* SSWord.swift in Sources */,
+				5B927BD220691628007CEE2C /* SSManager.swift in Sources */,
+				5B927BD320691628007CEE2C /* SSViewPresentationDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B927BB620691602007CEE2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B927BC220691602007CEE2C /* SpritzSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5B927BBD20691602007CEE2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B927BB120691602007CEE2C /* SpritzSwift */;
+			targetProxy = 5B927BBC20691602007CEE2C /* PBXContainerItemProxy */;
+		};
+		5B927BBF20691602007CEE2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B927B842069147F007CEE2C /* SpritzSwiftDemo */;
+			targetProxy = 5B927BBE20691602007CEE2C /* PBXContainerItemProxy */;
+		};
+		5B927BC620691603007CEE2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B927BB120691602007CEE2C /* SpritzSwift */;
+			targetProxy = 5B927BC520691603007CEE2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5B927B5620691077007CEE2C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B927B5720691077007CEE2C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5B927B8B2069147F007CEE2C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B927B8C2069147F007CEE2C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5B927B902069147F007CEE2C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B927B912069147F007CEE2C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5B927B6520691077007CEE2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5B927B6620691077007CEE2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5B927BA02069147F007CEE2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9T24DM84E8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SpritzSwiftDemo",
+				);
+				INFOPLIST_FILE = SpritzSwiftDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VincentChoubard.SpritzSwiftDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5B927BA12069147F007CEE2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9T24DM84E8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SpritzSwiftDemo",
+				);
+				INFOPLIST_FILE = SpritzSwiftDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VincentChoubard.SpritzSwiftDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5B927BCA20691603007CEE2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9T24DM84E8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SpritzSwift/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VincentChoubard.SpritzSwift;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5B927BCB20691603007CEE2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9T24DM84E8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SpritzSwift/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VincentChoubard.SpritzSwift;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5B927BCD20691603007CEE2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9T24DM84E8;
+				INFOPLIST_FILE = SpritzSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VincentChoubard.SpritzSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpritzSwiftDemo.app/SpritzSwiftDemo";
+			};
+			name = Debug;
+		};
+		5B927BCE20691603007CEE2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9T24DM84E8;
+				INFOPLIST_FILE = SpritzSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VincentChoubard.SpritzSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpritzSwiftDemo.app/SpritzSwiftDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B927B4520691077007CEE2C /* Build configuration list for PBXProject "SpritzSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B927B6520691077007CEE2C /* Debug */,
+				5B927B6620691077007CEE2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B927B9F2069147F007CEE2C /* Build configuration list for PBXNativeTarget "SpritzSwiftDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B927BA02069147F007CEE2C /* Debug */,
+				5B927BA12069147F007CEE2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B927BC920691603007CEE2C /* Build configuration list for PBXNativeTarget "SpritzSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B927BCA20691603007CEE2C /* Debug */,
+				5B927BCB20691603007CEE2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B927BCC20691603007CEE2C /* Build configuration list for PBXNativeTarget "SpritzSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B927BCD20691603007CEE2C /* Debug */,
+				5B927BCE20691603007CEE2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5B927B4220691077007CEE2C /* Project object */;
+}

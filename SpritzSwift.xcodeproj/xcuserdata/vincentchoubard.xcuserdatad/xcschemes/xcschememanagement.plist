@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Spritz.xcscheme_^#shared#^_</key>
+		<key>SpritzSwift.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>SpritzSwift.xcscheme</key>
+		<key>SpritzSwiftDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -17,12 +17,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>5B813167206865FA0024867B</key>
+		<key>5B927B4920691077007CEE2C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5B81317B206865FA0024867B</key>
+		<key>5B927B5D20691077007CEE2C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5B927B842069147F007CEE2C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5B927B972069147F007CEE2C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

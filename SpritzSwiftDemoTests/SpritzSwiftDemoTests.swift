@@ -1,15 +1,15 @@
 //
-//  SpritzTests.swift
-//  SpritzTests
+//  SpritzSwiftDemoTests.swift
+//  SpritzSwiftDemoTests
 //
 //  Created by vincent Choubard on 26/03/2018.
 //  Copyright © 2018 Vincent Choubard. All rights reserved.
 //
 
 import XCTest
-@testable import Spritz
+@testable import SpritzSwiftDemo
 
-class SpritzTests: XCTestCase {
+class SpritzSwiftDemoTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
