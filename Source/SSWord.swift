@@ -8,18 +8,18 @@
 
 import Foundation
 
-class SSWord: NSObject {
+public class SSWord {
     private static let minimum = 0.18
     private static let maximum = 0.3
     private static let minTreshold = 4.0
     private static let maxTreshold = 10.0
-    
-    var word: String = ""
     private var delay: TimeInterval = 0
-    var markerPosition: Int = 0 //should be set private
+    private(set) var markerPosition: Int = 0 
     
-    init(withWord word: String) {
-        super.init()
+    public var word: String = ""
+    
+    public convenience init(withWord word: String) {
+        self.init()
         self.word = word
         self.delay = self.calculateDelay()
         self.markerPosition = self.getReaderMarkerPosition()
@@ -38,7 +38,7 @@ class SSWord: NSObject {
         return SSWord.minimum + ((SSWord.maximum - SSWord.minimum)/(SSWord.maxTreshold - SSWord.minTreshold))
     }
     
-    func getReaderMarkerPosition() -> Int {
+    private func getReaderMarkerPosition() -> Int {
         let length = self.word.count
         var letter = 0
         switch (length) {

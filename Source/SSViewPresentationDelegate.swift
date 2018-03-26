@@ -9,7 +9,7 @@
 import UIKit
 
 @objc
-protocol SSViewPresentationDelegate {
+public protocol SSViewPresentationDelegate {
     @objc optional func getMarkerOffset() -> CGFloat
     @objc optional func getMarkerLength() -> CGFloat
     @objc optional func getMarkerColor() -> UIColor

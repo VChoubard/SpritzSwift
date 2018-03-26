@@ -8,38 +8,38 @@
 
 import UIKit
 
-class SSView: UIView {
+public class SSView: UIView {
     
     private var ssLabel: SSLabel?
     private var markerOffset: CGFloat = 0.0
     private var markerLength: CGFloat = 5.0
     private var markingLinesColor: UIColor = UIColor.black
     
-    var initWord = SSWord(withWord: "Spritz")
+    public var initWord = SSWord(withWord: "Spritz")
     private var delegate: SSViewPresentationDelegate?
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         initParam()
     }
     
-    init(frame: CGRect, delegate: SSViewPresentationDelegate?) {
+    public init(frame: CGRect, delegate: SSViewPresentationDelegate?) {
         super.init(frame: frame)
         self.delegate = delegate
         initParam()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         initParam()
     }
     
-    func updateWord(_ word: SSWord) {
+    public func updateWord(_ word: SSWord) {
         ssLabel!.word = word
         ssLabel!.setNeedsDisplay()
     }
     
-    override func draw(_ rect: CGRect) {
+    public override func draw(_ rect: CGRect) {
         super.draw(rect)
         
         let verticalOffset: CGFloat = 4.0

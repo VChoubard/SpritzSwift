@@ -8,6 +8,8 @@
 
 import UIKit
 import SnapKit
+import SpritzSwift
+
 
 class ViewController: UIViewController {
     
@@ -20,7 +22,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         ssView = SSView(frame: CGRect(x: 20, y: 20, width: 200, height: 40 ), delegate: self)
         ssView!.initWord = SSWord(withWord: "Spritz")
