@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 
 class ViewController: UIViewController {
-
+    
     let playButton = UIButton()
     let pauseButton = UIButton()
     let resumeButton = UIButton()
@@ -77,7 +77,7 @@ class ViewController: UIViewController {
         pauseButton.addTarget(self, action: #selector(pauseSpritz), for: UIControlEvents.touchUpInside)
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -91,7 +91,7 @@ class ViewController: UIViewController {
     func resumeSpritz() {
         manager.resumeReading()
     }
-
+    
     @objc
     func toggleSpritz() {
         manager.startReading { (word, finished) in
