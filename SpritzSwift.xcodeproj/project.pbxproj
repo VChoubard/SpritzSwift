@@ -7,28 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B3A174720692CBA00B8BD26 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B927B7D20691210007CEE2C /* SnapKit.framework */; };
+		5B3A174820692CBA00B8BD26 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B927B7D20691210007CEE2C /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5B927B882069147F007CEE2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B927B872069147F007CEE2C /* AppDelegate.swift */; };
 		5B927B8A2069147F007CEE2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B927B892069147F007CEE2C /* ViewController.swift */; };
 		5B927B8D2069147F007CEE2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B927B8B2069147F007CEE2C /* Main.storyboard */; };
 		5B927B8F2069147F007CEE2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B927B8E2069147F007CEE2C /* Assets.xcassets */; };
 		5B927B922069147F007CEE2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B927B902069147F007CEE2C /* LaunchScreen.storyboard */; };
-		5B927BA520691535007CEE2C /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B927B7D20691210007CEE2C /* SnapKit.framework */; };
-		5B927BA620691535007CEE2C /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B927B7D20691210007CEE2C /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5B927BA820691553007CEE2C /* SSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B927B73206911CB007CEE2C /* SSLabel.swift */; };
-		5B927BA920691557007CEE2C /* SSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B927B74206911CB007CEE2C /* SSView.swift */; };
-		5B927BAA2069155B007CEE2C /* SSWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B927B75206911CB007CEE2C /* SSWord.swift */; };
-		5B927BAB2069155E007CEE2C /* SSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B927B76206911CB007CEE2C /* SSManager.swift */; };
-		5B927BAC20691563007CEE2C /* SSViewPresentationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B927B77206911CB007CEE2C /* SSViewPresentationDelegate.swift */; };
 		5B927BBB20691602007CEE2C /* SpritzSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B927BB220691602007CEE2C /* SpritzSwift.framework */; };
 		5B927BC220691602007CEE2C /* SpritzSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B927BC120691602007CEE2C /* SpritzSwiftTests.swift */; };
 		5B927BC420691603007CEE2C /* SpritzSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B927BB420691602007CEE2C /* SpritzSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B927BC720691603007CEE2C /* SpritzSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B927BB220691602007CEE2C /* SpritzSwift.framework */; };
-		5B927BC820691603007CEE2C /* SpritzSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B927BB220691602007CEE2C /* SpritzSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5B927BCF20691628007CEE2C /* SSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B927B73206911CB007CEE2C /* SSLabel.swift */; };
 		5B927BD020691628007CEE2C /* SSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B927B74206911CB007CEE2C /* SSView.swift */; };
 		5B927BD120691628007CEE2C /* SSWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B927B75206911CB007CEE2C /* SSWord.swift */; };
 		5B927BD220691628007CEE2C /* SSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B927B76206911CB007CEE2C /* SSManager.swift */; };
 		5B927BD320691628007CEE2C /* SSViewPresentationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B927B77206911CB007CEE2C /* SSViewPresentationDelegate.swift */; };
+		5BC4ADB720699D0700FC4D9A /* SpritzSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC4ADB620699D0700FC4D9A /* SpritzSwift.framework */; };
+		5BC4ADB820699D0700FC4D9A /* SpritzSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC4ADB620699D0700FC4D9A /* SpritzSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,24 +41,17 @@
 			remoteGlobalIDString = 5B927B842069147F007CEE2C;
 			remoteInfo = SpritzSwiftDemo;
 		};
-		5B927BC520691603007CEE2C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5B927B4220691077007CEE2C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5B927BB120691602007CEE2C;
-			remoteInfo = SpritzSwift;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		5B927BA720691535007CEE2C /* Embed Frameworks */ = {
+		5B927BD920691EA4007CEE2C /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5B927BC820691603007CEE2C /* SpritzSwift.framework in Embed Frameworks */,
-				5B927BA620691535007CEE2C /* SnapKit.framework in Embed Frameworks */,
+				5BC4ADB820699D0700FC4D9A /* SpritzSwift.framework in Embed Frameworks */,
+				5B3A174820692CBA00B8BD26 /* SnapKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,7 +71,7 @@
 		5B927B75206911CB007CEE2C /* SSWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSWord.swift; sourceTree = "<group>"; };
 		5B927B76206911CB007CEE2C /* SSManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSManager.swift; sourceTree = "<group>"; };
 		5B927B77206911CB007CEE2C /* SSViewPresentationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSViewPresentationDelegate.swift; sourceTree = "<group>"; };
-		5B927B7D20691210007CEE2C /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = SpritzSwiftDemo/SnapKit.framework; sourceTree = "<group>"; };
+		5B927B7D20691210007CEE2C /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SnapKit.framework; sourceTree = "<group>"; };
 		5B927B852069147F007CEE2C /* SpritzSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpritzSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B927B872069147F007CEE2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B927B892069147F007CEE2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +87,7 @@
 		5B927BBA20691602007CEE2C /* SpritzSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpritzSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B927BC120691602007CEE2C /* SpritzSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpritzSwiftTests.swift; sourceTree = "<group>"; };
 		5B927BC320691603007CEE2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BC4ADB620699D0700FC4D9A /* SpritzSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpritzSwift.framework; path = Carthage/Build/iOS/SpritzSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +95,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B927BC720691603007CEE2C /* SpritzSwift.framework in Frameworks */,
-				5B927BA520691535007CEE2C /* SnapKit.framework in Frameworks */,
+				5BC4ADB720699D0700FC4D9A /* SpritzSwift.framework in Frameworks */,
+				5B3A174720692CBA00B8BD26 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,7 +121,7 @@
 		5B927B4120691077007CEE2C = {
 			isa = PBXGroup;
 			children = (
-				5B927B7D20691210007CEE2C /* SnapKit.framework */,
+				5BC4ADB620699D0700FC4D9A /* SpritzSwift.framework */,
 				5B927B72206911CB007CEE2C /* Source */,
 				5B927B4C20691077007CEE2C /* SpritzSwiftDemo */,
 				5B927B6120691077007CEE2C /* SpritzSwiftTests */,
@@ -157,6 +146,7 @@
 		5B927B4C20691077007CEE2C /* SpritzSwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5B927B7D20691210007CEE2C /* SnapKit.framework */,
 				5B927B6E2069119D007CEE2C /* AppDelegate.swift */,
 				5B927B6D2069119D007CEE2C /* ViewController.swift */,
 				5B927B5420691077007CEE2C /* Assets.xcassets */,
@@ -248,12 +238,11 @@
 				5B927B812069147F007CEE2C /* Sources */,
 				5B927B822069147F007CEE2C /* Frameworks */,
 				5B927B832069147F007CEE2C /* Resources */,
-				5B927BA720691535007CEE2C /* Embed Frameworks */,
+				5B927BD920691EA4007CEE2C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5B927BC620691603007CEE2C /* PBXTargetDependency */,
 			);
 			name = SpritzSwiftDemo;
 			productName = SpritzSwiftDemo;
@@ -374,12 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B927BA920691557007CEE2C /* SSView.swift in Sources */,
-				5B927BAB2069155E007CEE2C /* SSManager.swift in Sources */,
-				5B927BA820691553007CEE2C /* SSLabel.swift in Sources */,
-				5B927BAA2069155B007CEE2C /* SSWord.swift in Sources */,
 				5B927B8A2069147F007CEE2C /* ViewController.swift in Sources */,
-				5B927BAC20691563007CEE2C /* SSViewPresentationDelegate.swift in Sources */,
 				5B927B882069147F007CEE2C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,11 +400,6 @@
 			isa = PBXTargetDependency;
 			target = 5B927B842069147F007CEE2C /* SpritzSwiftDemo */;
 			targetProxy = 5B927BBE20691602007CEE2C /* PBXContainerItemProxy */;
-		};
-		5B927BC620691603007CEE2C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5B927BB120691602007CEE2C /* SpritzSwift */;
-			targetProxy = 5B927BC520691603007CEE2C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -562,13 +541,13 @@
 		5B927BA02069147F007CEE2C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9T24DM84E8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SpritzSwiftDemo",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = SpritzSwiftDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -582,13 +561,13 @@
 		5B927BA12069147F007CEE2C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9T24DM84E8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SpritzSwiftDemo",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = SpritzSwiftDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

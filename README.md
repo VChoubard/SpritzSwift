@@ -1,6 +1,29 @@
 # SpritzSwift
 Spritz reading framework translate and optimized from AFSpritz.
 
+## Installation
+
+### Carthage
+
+[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks.
+
+You can install Carthage with [Homebrew](http://brew.sh/) using the following command:
+
+```bash
+$ brew update
+$ brew install carthage
+```
+
+To integrate SnapKit into your Xcode project using Carthage, specify it in your `Cartfile`:
+
+```ogdl
+github "VChoubard/SpritzSwift" ~> 1.0.0
+```
+
+Run `carthage update` to build the framework.
+In your Xcode project add `SpritzSwift.framework` into `Embedded Binaries`
+
+### Manually
 
 Just import these files to your project:
 
@@ -22,7 +45,7 @@ Then, call the block that will start the reading and sending you a word to show 
     ssView = SSView(frame: CGRect(x: 20, y: 20, width: 200, height: 40 ), delegate: self)!
     ssView.backgroundColor = .clear
     self.view.addSubview(ssView!)
-    
+
     manager.startReading { (word, finished) in
         if !finished {
             self.ssView?.updateWord(word!)
@@ -44,13 +67,21 @@ SwiftSpritz has the feature of checking in each moment the status of the reading
 Example:
 
     if manager.status == .reading {
+
         // The current status is reading
+
     } else if manager.status == .notStarted {
+
         // The current status is not started yet
+
     }  else if manager.status == .stopped]) {
+
         // The current status is stopped, so it can be resumed
+
     } else if manager.status == .finished]) {
+
         // The current status is finished
+
     }
 
 ### Pausing and resuming
@@ -68,16 +99,22 @@ You can implement the  SSViewPresentationDelegate and pass it to the SSView cons
 
     @objc
     protocol SSViewPresentationDelegate {
+
         // Determine the offset of the marker position inside the view.
         @objc optional func getMarkerOffset() -> CGFloat
+
         // Determines the color of the letter you're supposed to be focused on.
         @objc optional func getMarkerColor() -> UIColor
+
         // Determines the color of the lines around the word.
         @objc optional func getLinesColor() -> UIColor
+
         // Determines the color of the text.
         @objc optional func getTextColor() -> UIColor
+
         // Determines the font of the text.
         @objc optional func getTextFont() -> UIFont
+        
     }
 
 ## Author
