@@ -10,35 +10,6 @@ import Foundation
 
 public class SSManager {
     
-    private class SSTimer {
-        let timer: Timer
-        var pauseDate: Date?
-        var previousFireDate: Date?
-        var isValid: Bool = true
-        
-        init(timer: Timer) {
-            self.timer = timer
-            self.isValid = timer.isValid
-        }
-        
-        func invalidate() {
-            self.timer.invalidate()
-        }
-        
-        func pause() {
-            pauseDate = Date()
-            previousFireDate = self.timer.fireDate
-            self.timer.fireDate = Date.distantFuture
-        }
-        
-        func resume() {
-            if let pauseDate = pauseDate, let previousFireDate = previousFireDate {
-                let pauseTime = -pauseDate.timeIntervalSinceNow
-                self.timer.fireDate = Date(timeInterval: pauseTime, since: previousFireDate)
-            }
-        }
-    }
-    
     public typealias StatusBlock = (_ words: SSWord?, _ finished: Bool) -> ()
     
     public enum Status {

@@ -9,7 +9,7 @@
 import XCTest
 @testable import SpritzSwift
 
-class SpritzSwiftTests: XCTestCase {
+class SSTimerTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -21,16 +21,9 @@ class SpritzSwiftTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testIsNotValid() {
+        let timer = Timer()
+        let ssTimer = SSTimer(timer: timer)
+        XCTAssertEqual(timer.isValid, ssTimer.isValid)
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
 }
