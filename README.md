@@ -1,5 +1,5 @@
 # SpritzSwift
-Spritz reading framework translate and optimized from AFSpritz.
+Spritz reading framework based on AFSpritz.
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
