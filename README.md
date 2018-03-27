@@ -79,11 +79,11 @@ Example:
 
         // The current status is not started yet
 
-    }  else if manager.status == .stopped]) {
+    }  else if manager.status == .stopped {
 
         // The current status is stopped, so it can be resumed
 
-    } else if manager.status == .finished]) {
+    } else if manager.status == .finished {
 
         // The current status is finished
 
