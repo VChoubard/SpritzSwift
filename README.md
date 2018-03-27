@@ -2,7 +2,7 @@
 Spritz reading framework based on AFSpritz.
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![Build Status](https://travis-ci.org/travis-ci/travis-web.svg?branch=master)](https://travis-ci.org/travis-ci/travis-web)
+[![Build Status](https://travis-ci.org/VChoubard/SpritzSwift.svg?branch=master)](https://travis-ci.org/VChoubard/SpritzSwift)
 
 ![alt text](https://media.giphy.com/media/18Tb56ycWSOg2cDGU2/giphy.gif "Example")
 
