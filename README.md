@@ -5,6 +5,8 @@ Spritz reading framework based on AFSpritz.
 
 ![alt text](https://media.giphy.com/media/18Tb56ycWSOg2cDGU2/giphy.gif "Example")
 
+travis-web
+
 ## Installation
 
 ### Carthage
