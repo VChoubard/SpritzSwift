@@ -96,7 +96,7 @@ public class SSManager {
             status = .reading
             timer?.resume()
         } else {
-            print("AFSpritz message: Reading can only be resumed when is stopped")
+            print("SpritzSwift message: Reading can only be resumed when is stopped")
         }
     }
 
@@ -105,7 +105,7 @@ public class SSManager {
             status = .stopped
             timer?.pause()
         } else {
-            print("AFSpritz message: Reading can only be paused when the reading is active")
+            print("SpritzSwift message: Reading can only be paused when the reading is active")
         }
     }
     
