@@ -30,13 +30,6 @@
 			remoteGlobalIDString = 5B927BB120691602007CEE2C;
 			remoteInfo = SpritzSwift;
 		};
-		5B927BBE20691602007CEE2C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5B927B4220691077007CEE2C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5B927B842069147F007CEE2C;
-			remoteInfo = SpritzSwiftDemo;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -68,7 +61,6 @@
 		5B927B77206911CB007CEE2C /* SSViewPresentationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSViewPresentationDelegate.swift; sourceTree = "<group>"; };
 		5B927B7D20691210007CEE2C /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SnapKit.framework; sourceTree = "<group>"; };
 		5B927B852069147F007CEE2C /* SpritzSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpritzSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B927B9C2069147F007CEE2C /* SpritzSwiftDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpritzSwiftDemoTests.swift; sourceTree = "<group>"; };
 		5B927B9E2069147F007CEE2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B927BB220691602007CEE2C /* SpritzSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpritzSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B927BB420691602007CEE2C /* SpritzSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpritzSwift.h; sourceTree = "<group>"; };
@@ -159,7 +151,6 @@
 		5B927B9B2069147F007CEE2C /* SpritzSwiftDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				5B927B9C2069147F007CEE2C /* SpritzSwiftDemoTests.swift */,
 				5B927B9E2069147F007CEE2C /* Info.plist */,
 			);
 			path = SpritzSwiftDemoTests;
@@ -245,7 +236,6 @@
 			);
 			dependencies = (
 				5B927BBD20691602007CEE2C /* PBXTargetDependency */,
-				5B927BBF20691602007CEE2C /* PBXTargetDependency */,
 			);
 			name = SpritzSwiftTests;
 			productName = SpritzSwiftTests;
@@ -357,11 +347,6 @@
 			isa = PBXTargetDependency;
 			target = 5B927BB120691602007CEE2C /* SpritzSwift */;
 			targetProxy = 5B927BBC20691602007CEE2C /* PBXContainerItemProxy */;
-		};
-		5B927BBF20691602007CEE2C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5B927B842069147F007CEE2C /* SpritzSwiftDemo */;
-			targetProxy = 5B927BBE20691602007CEE2C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
