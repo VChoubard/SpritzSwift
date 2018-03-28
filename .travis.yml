@@ -1,8 +1,5 @@
 osx_image: xcode9.2
 language: swift
-
-env:
-  - ACTION=test  PLATFORM=iOS     DESTINATION='platform=iOS Simulator,name=iPhone 6S'
-
-script:
-  - set -o pipefail && xcodebuild -scheme SpritzSwiftTests -destination "$DESTINATION" $ACTION | xcpretty
+xcode_project: SpritzSwift.xcodeproj
+xcode_scheme: SpritzSwiftTests
+os: ios
