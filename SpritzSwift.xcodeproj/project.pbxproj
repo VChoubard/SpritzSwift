@@ -7,40 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5B3A174720692CBA00B8BD26 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B927B7D20691210007CEE2C /* SnapKit.framework */; };
-		5B3A174820692CBA00B8BD26 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B927B7D20691210007CEE2C /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5B6A53F9206AE73300111432 /* SSTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A53F8206AE73300111432 /* SSTimer.swift */; };
-		5B927BBB20691602007CEE2C /* SpritzSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B927BB220691602007CEE2C /* SpritzSwift.framework */; };
-		5B927BC220691602007CEE2C /* SSTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B927BC120691602007CEE2C /* SSTimerTests.swift */; };
-		5B927BC420691603007CEE2C /* SpritzSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B927BB420691602007CEE2C /* SpritzSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B927BCF20691628007CEE2C /* SSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B927B73206911CB007CEE2C /* SSLabel.swift */; };
-		5B927BD020691628007CEE2C /* SSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B927B74206911CB007CEE2C /* SSView.swift */; };
-		5B927BD120691628007CEE2C /* SSWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B927B75206911CB007CEE2C /* SSWord.swift */; };
-		5B927BD220691628007CEE2C /* SSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B927B76206911CB007CEE2C /* SSManager.swift */; };
-		5B927BD320691628007CEE2C /* SSViewPresentationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B927B77206911CB007CEE2C /* SSViewPresentationDelegate.swift */; };
-		5BC4ADB720699D0700FC4D9A /* SpritzSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC4ADB620699D0700FC4D9A /* SpritzSwift.framework */; };
-		5BC4ADB820699D0700FC4D9A /* SpritzSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC4ADB620699D0700FC4D9A /* SpritzSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5B5F1545206D67CD008745CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F1544206D67CD008745CC /* AppDelegate.swift */; };
+		5B5F1547206D67CD008745CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F1546206D67CD008745CC /* ViewController.swift */; };
+		5B5F154C206D67CD008745CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B5F154B206D67CD008745CC /* Assets.xcassets */; };
+		5B5F154F206D67CD008745CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B5F154D206D67CD008745CC /* LaunchScreen.storyboard */; };
+		5B5F1579206D72DD008745CC /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5F1578206D72DD008745CC /* SnapKit.framework */; };
+		5B5F157A206D72DD008745CC /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5F1578206D72DD008745CC /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5B5F15AB206D73A6008745CC /* SpritzSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5F15A2206D73A6008745CC /* SpritzSwift.framework */; };
+		5B5F15B2206D73A6008745CC /* SpritzSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F15B1206D73A6008745CC /* SpritzSwiftTests.swift */; };
+		5B5F15B4206D73A6008745CC /* SpritzSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B5F15A4206D73A6008745CC /* SpritzSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B5F15BF206D73CD008745CC /* SSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F156D206D72C2008745CC /* SSLabel.swift */; };
+		5B5F15C0206D73CD008745CC /* SSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F156E206D72C2008745CC /* SSManager.swift */; };
+		5B5F15C1206D73CD008745CC /* SSTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F156F206D72C2008745CC /* SSTimer.swift */; };
+		5B5F15C2206D73CD008745CC /* SSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F156C206D72C2008745CC /* SSView.swift */; };
+		5B5F15C3206D73CD008745CC /* SSViewPresentationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F1570206D72C2008745CC /* SSViewPresentationDelegate.swift */; };
+		5B5F15C4206D73CD008745CC /* SSWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F1571206D72C2008745CC /* SSWord.swift */; };
+		5B5F15C6206D7472008745CC /* SpritzSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5F15A2206D73A6008745CC /* SpritzSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5B927BBC20691602007CEE2C /* PBXContainerItemProxy */ = {
+		5B5F15AC206D73A6008745CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5B927B4220691077007CEE2C /* Project object */;
+			containerPortal = 5B5F1539206D67CD008745CC /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5B927BB120691602007CEE2C;
+			remoteGlobalIDString = 5B5F15A1206D73A6008745CC;
 			remoteInfo = SpritzSwift;
+		};
+		5B5F15AE206D73A6008745CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B5F1539206D67CD008745CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B5F1540206D67CD008745CC;
+			remoteInfo = SpritzSwiftDemo;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		5B927BD920691EA4007CEE2C /* Embed Frameworks */ = {
+		5B5F156B206D6FD2008745CC /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5BC4ADB820699D0700FC4D9A /* SpritzSwift.framework in Embed Frameworks */,
-				5B3A174820692CBA00B8BD26 /* SnapKit.framework in Embed Frameworks */,
+				5B5F157A206D72DD008745CC /* SnapKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,172 +57,204 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5B6A53F8206AE73300111432 /* SSTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSTimer.swift; sourceTree = "<group>"; };
-		5B927B5420691077007CEE2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5B927B5720691077007CEE2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		5B927B5920691077007CEE2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B927B6D2069119D007CEE2C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5B927B6E2069119D007CEE2C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5B927B73206911CB007CEE2C /* SSLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSLabel.swift; sourceTree = "<group>"; };
-		5B927B74206911CB007CEE2C /* SSView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSView.swift; sourceTree = "<group>"; };
-		5B927B75206911CB007CEE2C /* SSWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSWord.swift; sourceTree = "<group>"; };
-		5B927B76206911CB007CEE2C /* SSManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSManager.swift; sourceTree = "<group>"; };
-		5B927B77206911CB007CEE2C /* SSViewPresentationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSViewPresentationDelegate.swift; sourceTree = "<group>"; };
-		5B927B7D20691210007CEE2C /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SnapKit.framework; sourceTree = "<group>"; };
-		5B927B852069147F007CEE2C /* SpritzSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpritzSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B927B9E2069147F007CEE2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B927BB220691602007CEE2C /* SpritzSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpritzSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B927BB420691602007CEE2C /* SpritzSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpritzSwift.h; sourceTree = "<group>"; };
-		5B927BB520691602007CEE2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B927BBA20691602007CEE2C /* SpritzSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpritzSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B927BC120691602007CEE2C /* SSTimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSTimerTests.swift; sourceTree = "<group>"; };
-		5B927BC320691603007CEE2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5BC4ADB620699D0700FC4D9A /* SpritzSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpritzSwift.framework; path = Carthage/Build/iOS/SpritzSwift.framework; sourceTree = "<group>"; };
+		5B5F1541206D67CD008745CC /* SpritzSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpritzSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B5F1544206D67CD008745CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5B5F1546206D67CD008745CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5B5F154B206D67CD008745CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5B5F154E206D67CD008745CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5B5F1550206D67CD008745CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B5F1559206D67CD008745CC /* SpritzSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpritzSwiftTests.swift; sourceTree = "<group>"; };
+		5B5F155B206D67CD008745CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B5F156C206D72C2008745CC /* SSView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSView.swift; sourceTree = "<group>"; };
+		5B5F156D206D72C2008745CC /* SSLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSLabel.swift; sourceTree = "<group>"; };
+		5B5F156E206D72C2008745CC /* SSManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSManager.swift; sourceTree = "<group>"; };
+		5B5F156F206D72C2008745CC /* SSTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSTimer.swift; sourceTree = "<group>"; };
+		5B5F1570206D72C2008745CC /* SSViewPresentationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSViewPresentationDelegate.swift; sourceTree = "<group>"; };
+		5B5F1571206D72C2008745CC /* SSWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSWord.swift; sourceTree = "<group>"; };
+		5B5F1578206D72DD008745CC /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = SpritzSwiftDemo/Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		5B5F1582206D734B008745CC /* SpritzSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpritzSwift.h; sourceTree = "<group>"; };
+		5B5F1583206D734B008745CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B5F158F206D734B008745CC /* SpritzSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpritzSwiftTests.swift; sourceTree = "<group>"; };
+		5B5F1591206D734B008745CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B5F15A2206D73A6008745CC /* SpritzSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpritzSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B5F15A4206D73A6008745CC /* SpritzSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpritzSwift.h; sourceTree = "<group>"; };
+		5B5F15A5206D73A6008745CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B5F15AA206D73A6008745CC /* SpritzSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpritzSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B5F15B1206D73A6008745CC /* SpritzSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpritzSwiftTests.swift; sourceTree = "<group>"; };
+		5B5F15B3206D73A6008745CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5B927B822069147F007CEE2C /* Frameworks */ = {
+		5B5F153E206D67CD008745CC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BC4ADB720699D0700FC4D9A /* SpritzSwift.framework in Frameworks */,
-				5B3A174720692CBA00B8BD26 /* SnapKit.framework in Frameworks */,
+				5B5F15C6206D7472008745CC /* SpritzSwift.framework in Frameworks */,
+				5B5F1579206D72DD008745CC /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5B927BAE20691602007CEE2C /* Frameworks */ = {
+		5B5F159E206D73A6008745CC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5B927BB720691602007CEE2C /* Frameworks */ = {
+		5B5F15A7206D73A6008745CC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B927BBB20691602007CEE2C /* SpritzSwift.framework in Frameworks */,
+				5B5F15AB206D73A6008745CC /* SpritzSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5B927B4120691077007CEE2C = {
+		5B5F1538206D67CD008745CC = {
 			isa = PBXGroup;
 			children = (
-				5BC4ADB620699D0700FC4D9A /* SpritzSwift.framework */,
-				5B927B72206911CB007CEE2C /* Source */,
-				5B927B4C20691077007CEE2C /* SpritzSwiftDemo */,
-				5B927B9B2069147F007CEE2C /* SpritzSwiftDemoTests */,
-				5B927BB320691602007CEE2C /* SpritzSwift */,
-				5B927B4B20691077007CEE2C /* Products */,
+				5B5F1578206D72DD008745CC /* SnapKit.framework */,
+				5B5F1564206D6A7E008745CC /* Source */,
+				5B5F1543206D67CD008745CC /* SpritzSwiftDemo */,
+				5B5F1558206D67CD008745CC /* SpritzSwiftTests */,
+				5B5F1581206D734B008745CC /* SpritzSwift */,
+				5B5F158E206D734B008745CC /* SpritzSwiftTests */,
+				5B5F15A3206D73A6008745CC /* SpritzSwift */,
+				5B5F15B0206D73A6008745CC /* SpritzSwiftTests */,
+				5B5F1542206D67CD008745CC /* Products */,
+				5B5F15C5206D7472008745CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		5B927B4B20691077007CEE2C /* Products */ = {
+		5B5F1542206D67CD008745CC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5B927B852069147F007CEE2C /* SpritzSwiftDemo.app */,
-				5B927BB220691602007CEE2C /* SpritzSwift.framework */,
-				5B927BBA20691602007CEE2C /* SpritzSwiftTests.xctest */,
+				5B5F1541206D67CD008745CC /* SpritzSwiftDemo.app */,
+				5B5F15A2206D73A6008745CC /* SpritzSwift.framework */,
+				5B5F15AA206D73A6008745CC /* SpritzSwiftTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5B927B4C20691077007CEE2C /* SpritzSwiftDemo */ = {
+		5B5F1543206D67CD008745CC /* SpritzSwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
-				5B927B7D20691210007CEE2C /* SnapKit.framework */,
-				5B927B6E2069119D007CEE2C /* AppDelegate.swift */,
-				5B927B6D2069119D007CEE2C /* ViewController.swift */,
-				5B927B5420691077007CEE2C /* Assets.xcassets */,
-				5B927B5620691077007CEE2C /* LaunchScreen.storyboard */,
-				5B927B5920691077007CEE2C /* Info.plist */,
+				5B5F1544206D67CD008745CC /* AppDelegate.swift */,
+				5B5F1546206D67CD008745CC /* ViewController.swift */,
+				5B5F154B206D67CD008745CC /* Assets.xcassets */,
+				5B5F154D206D67CD008745CC /* LaunchScreen.storyboard */,
+				5B5F1550206D67CD008745CC /* Info.plist */,
 			);
 			path = SpritzSwiftDemo;
 			sourceTree = "<group>";
 		};
-		5B927B72206911CB007CEE2C /* Source */ = {
+		5B5F1558206D67CD008745CC /* SpritzSwiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				5B927BC020691602007CEE2C /* SpritzSwiftTests */,
-				5B927B73206911CB007CEE2C /* SSLabel.swift */,
-				5B927B74206911CB007CEE2C /* SSView.swift */,
-				5B927B75206911CB007CEE2C /* SSWord.swift */,
-				5B927B76206911CB007CEE2C /* SSManager.swift */,
-				5B927B77206911CB007CEE2C /* SSViewPresentationDelegate.swift */,
-				5B6A53F8206AE73300111432 /* SSTimer.swift */,
+				5B5F1559206D67CD008745CC /* SpritzSwiftTests.swift */,
+				5B5F155B206D67CD008745CC /* Info.plist */,
+			);
+			path = SpritzSwiftTests;
+			sourceTree = "<group>";
+		};
+		5B5F1564206D6A7E008745CC /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				5B5F156D206D72C2008745CC /* SSLabel.swift */,
+				5B5F156E206D72C2008745CC /* SSManager.swift */,
+				5B5F156F206D72C2008745CC /* SSTimer.swift */,
+				5B5F156C206D72C2008745CC /* SSView.swift */,
+				5B5F1570206D72C2008745CC /* SSViewPresentationDelegate.swift */,
+				5B5F1571206D72C2008745CC /* SSWord.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
 		};
-		5B927B9B2069147F007CEE2C /* SpritzSwiftDemoTests */ = {
+		5B5F1581206D734B008745CC /* SpritzSwift */ = {
 			isa = PBXGroup;
 			children = (
-				5B927B9E2069147F007CEE2C /* Info.plist */,
-			);
-			path = SpritzSwiftDemoTests;
-			sourceTree = "<group>";
-		};
-		5B927BB320691602007CEE2C /* SpritzSwift */ = {
-			isa = PBXGroup;
-			children = (
-				5B927BB420691602007CEE2C /* SpritzSwift.h */,
-				5B927BB520691602007CEE2C /* Info.plist */,
+				5B5F1582206D734B008745CC /* SpritzSwift.h */,
+				5B5F1583206D734B008745CC /* Info.plist */,
 			);
 			path = SpritzSwift;
 			sourceTree = "<group>";
 		};
-		5B927BC020691602007CEE2C /* SpritzSwiftTests */ = {
+		5B5F158E206D734B008745CC /* SpritzSwiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				5B927BC120691602007CEE2C /* SSTimerTests.swift */,
-				5B927BC320691603007CEE2C /* Info.plist */,
+				5B5F158F206D734B008745CC /* SpritzSwiftTests.swift */,
+				5B5F1591206D734B008745CC /* Info.plist */,
 			);
 			path = SpritzSwiftTests;
+			sourceTree = "<group>";
+		};
+		5B5F15A3206D73A6008745CC /* SpritzSwift */ = {
+			isa = PBXGroup;
+			children = (
+				5B5F15A4206D73A6008745CC /* SpritzSwift.h */,
+				5B5F15A5206D73A6008745CC /* Info.plist */,
+			);
+			path = SpritzSwift;
+			sourceTree = "<group>";
+		};
+		5B5F15B0206D73A6008745CC /* SpritzSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				5B5F15B1206D73A6008745CC /* SpritzSwiftTests.swift */,
+				5B5F15B3206D73A6008745CC /* Info.plist */,
+			);
+			path = SpritzSwiftTests;
+			sourceTree = "<group>";
+		};
+		5B5F15C5206D7472008745CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5B927BAF20691602007CEE2C /* Headers */ = {
+		5B5F159F206D73A6008745CC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B927BC420691603007CEE2C /* SpritzSwift.h in Headers */,
+				5B5F15B4206D73A6008745CC /* SpritzSwift.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5B927B842069147F007CEE2C /* SpritzSwiftDemo */ = {
+		5B5F1540206D67CD008745CC /* SpritzSwiftDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5B927B9F2069147F007CEE2C /* Build configuration list for PBXNativeTarget "SpritzSwiftDemo" */;
+			buildConfigurationList = 5B5F155E206D67CD008745CC /* Build configuration list for PBXNativeTarget "SpritzSwiftDemo" */;
 			buildPhases = (
-				5B927B812069147F007CEE2C /* Sources */,
-				5B927B822069147F007CEE2C /* Frameworks */,
-				5B927B832069147F007CEE2C /* Resources */,
-				5B927BD920691EA4007CEE2C /* Embed Frameworks */,
+				5B5F153D206D67CD008745CC /* Sources */,
+				5B5F153E206D67CD008745CC /* Frameworks */,
+				5B5F153F206D67CD008745CC /* Resources */,
+				5B5F156B206D6FD2008745CC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SpritzSwiftDemo;
-			productName = SpritzSwiftDemo;
-			productReference = 5B927B852069147F007CEE2C /* SpritzSwiftDemo.app */;
+			productName = SpritzSwift;
+			productReference = 5B5F1541206D67CD008745CC /* SpritzSwiftDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5B927BB120691602007CEE2C /* SpritzSwift */ = {
+		5B5F15A1206D73A6008745CC /* SpritzSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5B927BC920691603007CEE2C /* Build configuration list for PBXNativeTarget "SpritzSwift" */;
+			buildConfigurationList = 5B5F15B9206D73A6008745CC /* Build configuration list for PBXNativeTarget "SpritzSwift" */;
 			buildPhases = (
-				5B927BAD20691602007CEE2C /* Sources */,
-				5B927BAE20691602007CEE2C /* Frameworks */,
-				5B927BAF20691602007CEE2C /* Headers */,
-				5B927BB020691602007CEE2C /* Resources */,
+				5B5F159D206D73A6008745CC /* Sources */,
+				5B5F159E206D73A6008745CC /* Frameworks */,
+				5B5F159F206D73A6008745CC /* Headers */,
+				5B5F15A0206D73A6008745CC /* Resources */,
 			);
 			buildRules = (
 			);
@@ -221,53 +262,54 @@
 			);
 			name = SpritzSwift;
 			productName = SpritzSwift;
-			productReference = 5B927BB220691602007CEE2C /* SpritzSwift.framework */;
+			productReference = 5B5F15A2206D73A6008745CC /* SpritzSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5B927BB920691602007CEE2C /* SpritzSwiftTests */ = {
+		5B5F15A9206D73A6008745CC /* SpritzSwiftTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5B927BCC20691603007CEE2C /* Build configuration list for PBXNativeTarget "SpritzSwiftTests" */;
+			buildConfigurationList = 5B5F15BC206D73A6008745CC /* Build configuration list for PBXNativeTarget "SpritzSwiftTests" */;
 			buildPhases = (
-				5B927BB620691602007CEE2C /* Sources */,
-				5B927BB720691602007CEE2C /* Frameworks */,
-				5B927BB820691602007CEE2C /* Resources */,
+				5B5F15A6206D73A6008745CC /* Sources */,
+				5B5F15A7206D73A6008745CC /* Frameworks */,
+				5B5F15A8206D73A6008745CC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5B927BBD20691602007CEE2C /* PBXTargetDependency */,
+				5B5F15AD206D73A6008745CC /* PBXTargetDependency */,
+				5B5F15AF206D73A6008745CC /* PBXTargetDependency */,
 			);
 			name = SpritzSwiftTests;
 			productName = SpritzSwiftTests;
-			productReference = 5B927BBA20691602007CEE2C /* SpritzSwiftTests.xctest */;
+			productReference = 5B5F15AA206D73A6008745CC /* SpritzSwiftTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5B927B4220691077007CEE2C /* Project object */ = {
+		5B5F1539206D67CD008745CC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Vincent Choubard";
 				TargetAttributes = {
-					5B927B842069147F007CEE2C = {
+					5B5F1540206D67CD008745CC = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
-					5B927BB120691602007CEE2C = {
+					5B5F15A1206D73A6008745CC = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
-					5B927BB920691602007CEE2C = {
+					5B5F15A9206D73A6008745CC = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 5B927B842069147F007CEE2C;
+						TestTargetID = 5B5F1540206D67CD008745CC;
 					};
 				};
 			};
-			buildConfigurationList = 5B927B4520691077007CEE2C /* Build configuration list for PBXProject "SpritzSwift" */;
+			buildConfigurationList = 5B5F153C206D67CD008745CC /* Build configuration list for PBXProject "SpritzSwift" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -275,34 +317,36 @@
 				en,
 				Base,
 			);
-			mainGroup = 5B927B4120691077007CEE2C;
-			productRefGroup = 5B927B4B20691077007CEE2C /* Products */;
+			mainGroup = 5B5F1538206D67CD008745CC;
+			productRefGroup = 5B5F1542206D67CD008745CC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5B927B842069147F007CEE2C /* SpritzSwiftDemo */,
-				5B927BB120691602007CEE2C /* SpritzSwift */,
-				5B927BB920691602007CEE2C /* SpritzSwiftTests */,
+				5B5F1540206D67CD008745CC /* SpritzSwiftDemo */,
+				5B5F15A1206D73A6008745CC /* SpritzSwift */,
+				5B5F15A9206D73A6008745CC /* SpritzSwiftTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5B927B832069147F007CEE2C /* Resources */ = {
+		5B5F153F206D67CD008745CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B5F154F206D67CD008745CC /* LaunchScreen.storyboard in Resources */,
+				5B5F154C206D67CD008745CC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B5F15A0206D73A6008745CC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5B927BB020691602007CEE2C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B927BB820691602007CEE2C /* Resources */ = {
+		5B5F15A8206D73A6008745CC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -312,49 +356,56 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5B927B812069147F007CEE2C /* Sources */ = {
+		5B5F153D206D67CD008745CC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B5F1547206D67CD008745CC /* ViewController.swift in Sources */,
+				5B5F1545206D67CD008745CC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5B927BAD20691602007CEE2C /* Sources */ = {
+		5B5F159D206D73A6008745CC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B927BCF20691628007CEE2C /* SSLabel.swift in Sources */,
-				5B927BD020691628007CEE2C /* SSView.swift in Sources */,
-				5B927BD120691628007CEE2C /* SSWord.swift in Sources */,
-				5B927BD220691628007CEE2C /* SSManager.swift in Sources */,
-				5B927BD320691628007CEE2C /* SSViewPresentationDelegate.swift in Sources */,
-				5B6A53F9206AE73300111432 /* SSTimer.swift in Sources */,
+				5B5F15BF206D73CD008745CC /* SSLabel.swift in Sources */,
+				5B5F15C0206D73CD008745CC /* SSManager.swift in Sources */,
+				5B5F15C1206D73CD008745CC /* SSTimer.swift in Sources */,
+				5B5F15C2206D73CD008745CC /* SSView.swift in Sources */,
+				5B5F15C3206D73CD008745CC /* SSViewPresentationDelegate.swift in Sources */,
+				5B5F15C4206D73CD008745CC /* SSWord.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5B927BB620691602007CEE2C /* Sources */ = {
+		5B5F15A6206D73A6008745CC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B927BC220691602007CEE2C /* SSTimerTests.swift in Sources */,
+				5B5F15B2206D73A6008745CC /* SpritzSwiftTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5B927BBD20691602007CEE2C /* PBXTargetDependency */ = {
+		5B5F15AD206D73A6008745CC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5B927BB120691602007CEE2C /* SpritzSwift */;
-			targetProxy = 5B927BBC20691602007CEE2C /* PBXContainerItemProxy */;
+			target = 5B5F15A1206D73A6008745CC /* SpritzSwift */;
+			targetProxy = 5B5F15AC206D73A6008745CC /* PBXContainerItemProxy */;
+		};
+		5B5F15AF206D73A6008745CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B5F1540206D67CD008745CC /* SpritzSwiftDemo */;
+			targetProxy = 5B5F15AE206D73A6008745CC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5B927B5620691077007CEE2C /* LaunchScreen.storyboard */ = {
+		5B5F154D206D67CD008745CC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5B927B5720691077007CEE2C /* Base */,
+				5B5F154E206D67CD008745CC /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -362,7 +413,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		5B927B6520691077007CEE2C /* Debug */ = {
+		5B5F155C206D67CD008745CC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -419,7 +470,7 @@
 			};
 			name = Debug;
 		};
-		5B927B6620691077007CEE2C /* Release */ = {
+		5B5F155D206D67CD008745CC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -469,7 +520,7 @@
 			};
 			name = Release;
 		};
-		5B927BA02069147F007CEE2C /* Debug */ = {
+		5B5F155F206D67CD008745CC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -477,19 +528,18 @@
 				DEVELOPMENT_TEAM = 9T24DM84E8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/SpritzSwiftDemo",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/SpritzSwiftDemo/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = SpritzSwiftDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = VincentChoubard.SpritzSwiftDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = VincentChoubard.SpritzSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		5B927BA12069147F007CEE2C /* Release */ = {
+		5B5F1560206D67CD008745CC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -497,19 +547,18 @@
 				DEVELOPMENT_TEAM = 9T24DM84E8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/SpritzSwiftDemo",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/SpritzSwiftDemo/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = SpritzSwiftDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = VincentChoubard.SpritzSwiftDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = VincentChoubard.SpritzSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		5B927BCA20691603007CEE2C /* Debug */ = {
+		5B5F15BA206D73A6008745CC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
@@ -533,7 +582,7 @@
 			};
 			name = Debug;
 		};
-		5B927BCB20691603007CEE2C /* Release */ = {
+		5B5F15BB206D73A6008745CC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
@@ -557,12 +606,13 @@
 			};
 			name = Release;
 		};
-		5B927BCD20691603007CEE2C /* Debug */ = {
+		5B5F15BD206D73A6008745CC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9T24DM84E8;
-				INFOPLIST_FILE = Source/SpritzSwiftTests/Info.plist;
+				INFOPLIST_FILE = SpritzSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = VincentChoubard.SpritzSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -572,12 +622,13 @@
 			};
 			name = Debug;
 		};
-		5B927BCE20691603007CEE2C /* Release */ = {
+		5B5F15BE206D73A6008745CC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9T24DM84E8;
-				INFOPLIST_FILE = Source/SpritzSwiftTests/Info.plist;
+				INFOPLIST_FILE = SpritzSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = VincentChoubard.SpritzSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -590,43 +641,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5B927B4520691077007CEE2C /* Build configuration list for PBXProject "SpritzSwift" */ = {
+		5B5F153C206D67CD008745CC /* Build configuration list for PBXProject "SpritzSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5B927B6520691077007CEE2C /* Debug */,
-				5B927B6620691077007CEE2C /* Release */,
+				5B5F155C206D67CD008745CC /* Debug */,
+				5B5F155D206D67CD008745CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5B927B9F2069147F007CEE2C /* Build configuration list for PBXNativeTarget "SpritzSwiftDemo" */ = {
+		5B5F155E206D67CD008745CC /* Build configuration list for PBXNativeTarget "SpritzSwiftDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5B927BA02069147F007CEE2C /* Debug */,
-				5B927BA12069147F007CEE2C /* Release */,
+				5B5F155F206D67CD008745CC /* Debug */,
+				5B5F1560206D67CD008745CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5B927BC920691603007CEE2C /* Build configuration list for PBXNativeTarget "SpritzSwift" */ = {
+		5B5F15B9206D73A6008745CC /* Build configuration list for PBXNativeTarget "SpritzSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5B927BCA20691603007CEE2C /* Debug */,
-				5B927BCB20691603007CEE2C /* Release */,
+				5B5F15BA206D73A6008745CC /* Debug */,
+				5B5F15BB206D73A6008745CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5B927BCC20691603007CEE2C /* Build configuration list for PBXNativeTarget "SpritzSwiftTests" */ = {
+		5B5F15BC206D73A6008745CC /* Build configuration list for PBXNativeTarget "SpritzSwiftTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5B927BCD20691603007CEE2C /* Debug */,
-				5B927BCE20691603007CEE2C /* Release */,
+				5B5F15BD206D73A6008745CC /* Debug */,
+				5B5F15BE206D73A6008745CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 5B927B4220691077007CEE2C /* Project object */;
+	rootObject = 5B5F1539206D67CD008745CC /* Project object */;
 }

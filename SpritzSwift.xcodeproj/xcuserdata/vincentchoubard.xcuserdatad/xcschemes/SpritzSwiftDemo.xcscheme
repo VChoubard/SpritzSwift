@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5B927B842069147F007CEE2C"
+               BlueprintIdentifier = "5B5F1540206D67CD008745CC"
                BuildableName = "SpritzSwiftDemo.app"
                BlueprintName = "SpritzSwiftDemo"
                ReferencedContainer = "container:SpritzSwift.xcodeproj">
@@ -33,7 +33,17 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5B927BB920691602007CEE2C"
+               BlueprintIdentifier = "5B5F1554206D67CD008745CC"
+               BuildableName = "SpritzSwiftTests.xctest"
+               BlueprintName = "SpritzSwiftTests"
+               ReferencedContainer = "container:SpritzSwift.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5B5F1587206D734B008745CC"
                BuildableName = "SpritzSwiftTests.xctest"
                BlueprintName = "SpritzSwiftTests"
                ReferencedContainer = "container:SpritzSwift.xcodeproj">
@@ -43,7 +53,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5B927B842069147F007CEE2C"
+            BlueprintIdentifier = "5B5F1540206D67CD008745CC"
             BuildableName = "SpritzSwiftDemo.app"
             BlueprintName = "SpritzSwiftDemo"
             ReferencedContainer = "container:SpritzSwift.xcodeproj">
@@ -67,7 +77,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5B927B842069147F007CEE2C"
+            BlueprintIdentifier = "5B5F1540206D67CD008745CC"
             BuildableName = "SpritzSwiftDemo.app"
             BlueprintName = "SpritzSwiftDemo"
             ReferencedContainer = "container:SpritzSwift.xcodeproj">
@@ -82,15 +92,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5B927B842069147F007CEE2C"
+            BlueprintIdentifier = "5B5F1540206D67CD008745CC"
             BuildableName = "SpritzSwiftDemo.app"
             BlueprintName = "SpritzSwiftDemo"
             ReferencedContainer = "container:SpritzSwift.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
