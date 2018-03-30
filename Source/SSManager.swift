@@ -37,7 +37,7 @@ public class SSManager {
     public func startReading(completion: @escaping StatusBlock) {
         current = 0
 
-        guard let timer = timer, timer.isValid, status != .stopped else {
+        guard let timer = timer, (timer.isValid && status != .finished) else {
             self.timer?.invalidate()
             self.timer = SSTimer(timer: Timer.scheduledTimer(withTimeInterval: self.speed, repeats: true, block: { (timer) in
                 if (self.current != self.words.count) {

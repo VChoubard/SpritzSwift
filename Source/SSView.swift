@@ -16,16 +16,9 @@ public class SSView: UIView {
     private var markingLinesColor: UIColor = UIColor.black
     
     public var initWord = SSWord(withWord: "Spritz")
-    private var delegate: SSViewPresentationDelegate?
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
-        initParam()
-    }
-    
-    public init(frame: CGRect, delegate: SSViewPresentationDelegate?) {
-        super.init(frame: frame)
-        self.delegate = delegate
         initParam()
     }
     
@@ -45,8 +38,8 @@ public class SSView: UIView {
         let verticalOffset: CGFloat = 4.0
         let horizontalOffset: CGFloat = 10.0
         
-        let markerOffset = delegate?.getMarkerOffset?() ?? self.markerOffset
-        let markerLength = delegate?.getMarkerLength?() ?? self.markerLength
+        let markerOffset = self.markerOffset
+        let markerLength = self.markerLength
         
         self.markingLinesColor.set()
         self.drawLineInContextWithWidth(1.0, fromPointX: markerOffset, fromPointY: self.frame.size.height-markerLength - verticalOffset, toPointX: markerOffset, toPointY: self.frame.size.height - verticalOffset)
@@ -57,8 +50,8 @@ public class SSView: UIView {
     }
     
     private func initParam() {
-        markerOffset = self.frame.size.width/3
-        ssLabel = SSLabel(frame: CGRect(x: 0, y: 0, width: frame.width, height: frame.height), delegate: delegate)
+        markerOffset = self.frame.size.width/2
+        ssLabel = SSLabel(frame: CGRect(x: 0, y: 0, width: frame.width, height: frame.height))
         ssLabel!.word = initWord
         self.addSubview(ssLabel!)
     }
