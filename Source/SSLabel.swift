@@ -20,18 +20,16 @@ class SSLabel: UIView {
     private var markerWidth: CGFloat = 0
     private var textVerticalPosition: CGFloat = 15
     private var textHorizontalPosition: CGFloat = 0
-    private var delegate: SSViewPresentationDelegate?
     
     var word = SSWord(withWord: " ")
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    init() {
+        super.init(frame: CGRect.zero)
         initParameters()
     }
     
-    init(frame: CGRect, delegate: SSViewPresentationDelegate?) {
+    override init(frame: CGRect) {
         super.init(frame: frame)
-        self.delegate = delegate
         initParameters()
     }
     
@@ -52,8 +50,8 @@ class SSLabel: UIView {
         
         //create the attstring
         let attString = NSMutableAttributedString(string: word.word)
-        attString.addAttribute(NSAttributedStringKey.foregroundColor, value: self.delegate?.getMarkerColor?() ?? markerColor , range:NSMakeRange(self.word.markerPosition, 1))
-        attString.addAttribute(NSAttributedStringKey.font, value: self.delegate?.getTextFont?() ?? self.textFont, range: NSMakeRange(0, self.word.word.count))
+        attString.addAttribute(NSAttributedStringKey.foregroundColor, value: markerColor , range:NSMakeRange(self.word.markerPosition, 1))
+        attString.addAttribute(NSAttributedStringKey.font, value: self.textFont, range: NSMakeRange(0, self.word.word.count))
 
     
         // create the frame
@@ -113,9 +111,9 @@ class SSLabel: UIView {
                         (runsCount == 1 && self.word.markerPosition == 0) ||
                         (runsCount == 2 && self.word.markerPosition != 0 && runIndex > 0) ||
                         (runsCount == 2 && self.word.markerPosition == 0 && runIndex == 0) {
-                        context!.setFillColor(self.delegate?.getMarkerColor?().cgColor ?? self.markerColor.cgColor)
+                        context!.setFillColor(self.markerColor.cgColor)
                     } else {
-                        context!.setFillColor(self.delegate?.getTextColor?().cgColor ?? self.textColor.cgColor)
+                        context!.setFillColor(self.textColor.cgColor)
                     }
                     
                     position = CGPoint(x: position.x + textHorizontalPosition,y: position.y + textVerticalPosition)
@@ -133,8 +131,8 @@ class SSLabel: UIView {
     }
     
     private func initParameters() {
-        self.backgroundColor = .clear
-        markerOffset = self.frame.size.width/3
+        self.backgroundColor = .red
+        markerOffset = self.frame.size.width/2
         textVerticalPosition = 15
         markerColor = UIColor.red
         textColor = UIColor.black
@@ -149,7 +147,7 @@ class SSLabel: UIView {
     }
     
     private func recomputeTextHorizontalPosition() {
-        let markerOffset = self.delegate?.getMarkerOffset?() ?? self.markerOffset
+        let markerOffset = self.markerOffset
         textHorizontalPosition = markerOffset - (headerWidth + markerWidth/2.0)
     }
 }

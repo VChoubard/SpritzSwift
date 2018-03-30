@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5B5F1545206D67CD008745CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F1544206D67CD008745CC /* AppDelegate.swift */; };
-		5B5F1547206D67CD008745CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F1546206D67CD008745CC /* ViewController.swift */; };
 		5B5F154C206D67CD008745CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B5F154B206D67CD008745CC /* Assets.xcassets */; };
 		5B5F154F206D67CD008745CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B5F154D206D67CD008745CC /* LaunchScreen.storyboard */; };
 		5B5F1579206D72DD008745CC /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5F1578206D72DD008745CC /* SnapKit.framework */; };
@@ -23,6 +22,8 @@
 		5B5F15C3206D73CD008745CC /* SSViewPresentationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F1570206D72C2008745CC /* SSViewPresentationDelegate.swift */; };
 		5B5F15C4206D73CD008745CC /* SSWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F1571206D72C2008745CC /* SSWord.swift */; };
 		5B5F15C6206D7472008745CC /* SpritzSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5F15A2206D73A6008745CC /* SpritzSwift.framework */; };
+		5B5F15C8206D75C8008745CC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F15C7206D75C8008745CC /* MainViewController.swift */; };
+		5B5F15CA206D75F7008745CC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F15C9206D75F7008745CC /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +60,6 @@
 /* Begin PBXFileReference section */
 		5B5F1541206D67CD008745CC /* SpritzSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpritzSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B5F1544206D67CD008745CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5B5F1546206D67CD008745CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5B5F154B206D67CD008745CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B5F154E206D67CD008745CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B5F1550206D67CD008745CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,6 +82,8 @@
 		5B5F15AA206D73A6008745CC /* SpritzSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpritzSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B5F15B1206D73A6008745CC /* SpritzSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpritzSwiftTests.swift; sourceTree = "<group>"; };
 		5B5F15B3206D73A6008745CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B5F15C7206D75C8008745CC /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		5B5F15C9206D75F7008745CC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,8 +143,9 @@
 		5B5F1543206D67CD008745CC /* SpritzSwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5B5F15C7206D75C8008745CC /* MainViewController.swift */,
+				5B5F15C9206D75F7008745CC /* MainView.swift */,
 				5B5F1544206D67CD008745CC /* AppDelegate.swift */,
-				5B5F1546206D67CD008745CC /* ViewController.swift */,
 				5B5F154B206D67CD008745CC /* Assets.xcassets */,
 				5B5F154D206D67CD008745CC /* LaunchScreen.storyboard */,
 				5B5F1550206D67CD008745CC /* Info.plist */,
@@ -360,7 +363,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B5F1547206D67CD008745CC /* ViewController.swift in Sources */,
+				5B5F15C8206D75C8008745CC /* MainViewController.swift in Sources */,
+				5B5F15CA206D75F7008745CC /* MainView.swift in Sources */,
 				5B5F1545206D67CD008745CC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
