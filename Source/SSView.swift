@@ -10,26 +10,20 @@ import UIKit
 
 public class SSView: UIView {
     
-    private var ssLabel: SSLabel?
-    private var markerOffset: CGFloat = 0.0
+    private var ssLabel = SSLabel()
     private var markerLength: CGFloat = 5.0
-    private var markingLinesColor: UIColor = UIColor.black
+    
+    public var markerOffset: CGFloat = 0.0
+    public var markerColor = UIColor.red
+    public var markingLinesColor = UIColor.black
+    public var textColor = UIColor.black
+    public var textFont = UIFont.systemFont(ofSize: 20)
     
     public var initWord = SSWord(withWord: "Spritz")
     
-    public override init(frame: CGRect) {
-        super.init(frame: frame)
-        initParam()
-    }
-    
-    public required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        initParam()
-    }
-    
     public func updateWord(_ word: SSWord) {
-        ssLabel!.word = word
-        ssLabel!.setNeedsDisplay()
+        ssLabel.word = word
+        ssLabel.setNeedsDisplay()
     }
     
     public override func draw(_ rect: CGRect) {
@@ -49,11 +43,25 @@ public class SSView: UIView {
         self.drawLineInContextWithWidth(2.0, fromPointX: horizontalOffset, fromPointY: self.frame.size.height-verticalOffset ,toPointX: self.frame.size.width - horizontalOffset, toPointY: self.frame.size.height-verticalOffset)
     }
     
-    private func initParam() {
-        markerOffset = self.frame.size.width/3
-        ssLabel = SSLabel(frame: CGRect(x: 0, y: 0, width: frame.width, height: frame.height))
-        ssLabel!.word = initWord
-        self.addSubview(ssLabel!)
+    override public func layoutSubviews() {
+        markerOffset = markerOffset == 0 ? self.bounds.width/2 : markerOffset
+        ssLabel.markerOffset = markerOffset
+        ssLabel.markerColor = markerColor
+        ssLabel.textFont = textFont
+        ssLabel.textColor = textColor
+        
+        ssLabel.translatesAutoresizingMaskIntoConstraints = false
+        
+        let topConstraint = NSLayoutConstraint(item: ssLabel, attribute: .top, relatedBy: .equal, toItem: self, attribute: .top, multiplier: 1, constant: 0)
+        let bottomConstraint = NSLayoutConstraint(item: ssLabel, attribute: .bottom, relatedBy: .equal, toItem: self, attribute: .bottom, multiplier: 1, constant: 0)
+        let leadingConstraint = NSLayoutConstraint(item: ssLabel, attribute: .leading, relatedBy: .equal, toItem: self, attribute: .leading, multiplier: 1, constant: 0)
+        let trailingConstraint = NSLayoutConstraint(item: ssLabel, attribute: .trailing, relatedBy: .equal, toItem: self, attribute: .trailing, multiplier: 1, constant: 0)
+        
+        ssLabel.word = initWord
+        ssLabel.backgroundColor = .red
+        self.addSubview(ssLabel)
+        addConstraints([topConstraint, bottomConstraint, leadingConstraint, trailingConstraint])
+        layoutIfNeeded()
     }
     
     private func drawLineInContextWithWidth(_ width: CGFloat, fromPointX fx: CGFloat, fromPointY fy: CGFloat, toPointX tx: CGFloat, toPointY ty: CGFloat) {
