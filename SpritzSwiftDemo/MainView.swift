@@ -12,34 +12,14 @@ import SpritzSwift
 
 class MainView: UIView {
     
-    var ssView: SSView
+    var ssView = SSView()
     let playButton = UIButton()
     let pauseButton = UIButton()
     let resumeButton = UIButton()
     
-    override init(frame: CGRect) {
-        ssView = SSView(frame: frame)
-        super.init(frame: frame)
-        layout()
-    }
     
-    required init?(coder aDecoder: NSCoder) {
-        ssView = SSView(frame: CGRect.zero)
-        super.init(coder: aDecoder)
-        layout()
-    }
-    
-    func layout() {
-        ssView.initWord = SSWord(withWord: "Spritz")
-        ssView.backgroundColor = .clear
-        self.addSubview(ssView)
-        
-        ssView.snp.makeConstraints { (make) -> Void in
-            make.height.equalTo(40)
-            make.left.equalTo(self.snp.left).inset(20)
-            make.right.equalTo(self.snp.right).inset(20)
-            make.center.equalTo(self)
-        }
+    override func layoutSubviews() {
+        setupSpritzView()
         
         playButton.backgroundColor = .white
         playButton.setTitle("Play", for: .normal)
@@ -78,6 +58,25 @@ class MainView: UIView {
         }
         
         self.backgroundColor = UIColor.gray
+    }
+    
+    private func setupSpritzView() {
+        ssView.initWord = SSWord(withWord: "Spritz")
+        ssView.backgroundColor = .clear
+//        ssView.markingLinesColor = .red
+//        ssView.markerColor = .blue
+        ssView.textFont = UIFont.systemFont(ofSize: 60)
+//        ssView.textColor = .blue
+        self.addSubview(ssView)
+        
+        ssView.snp.makeConstraints { (make) -> Void in
+            make.top.equalTo(self.snp.top).inset(60)
+//            make.height.equalTo(40)
+            make.left.equalTo(self.snp.left).inset(20)
+            make.right.equalTo(self.snp.right).inset(20)
+//            make.center.equalTo(self)
+            make.bottom.equalTo(self.snp.bottom).inset(60)
+        }
     }
     
 }

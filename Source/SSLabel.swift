@@ -11,10 +11,10 @@ import CoreText
 
 class SSLabel: UIView {
     
-    private var markerColor: UIColor = UIColor.red
-    private var textColor: UIColor = UIColor.black
-    private var textFont: UIFont = UIFont.systemFont(ofSize: 20)
-    private var markerOffset: CGFloat = 0
+    var markerColor: UIColor = UIColor.red
+    var textColor: UIColor = UIColor.black
+    var textFont: UIFont = UIFont.systemFont(ofSize: 20)
+    var markerOffset: CGFloat = 66.666
     private var headerWidth: CGFloat = 0
     private var tailWidth: CGFloat = 0
     private var markerWidth: CGFloat = 0
@@ -23,19 +23,8 @@ class SSLabel: UIView {
     
     var word = SSWord(withWord: " ")
     
-    init() {
-        super.init(frame: CGRect.zero)
-        initParameters()
-    }
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        initParameters()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        initParameters()
+    override func layoutSubviews() {
+        backgroundColor = .clear
     }
     
     override func draw(_ rect: CGRect) {
@@ -128,15 +117,6 @@ class SSLabel: UIView {
                 }
             }
         }
-    }
-    
-    private func initParameters() {
-        self.backgroundColor = .clear
-        markerOffset = self.frame.size.width/3
-        textVerticalPosition = 15
-        markerColor = UIColor.red
-        textColor = UIColor.black
-        textFont = UIFont.systemFont(ofSize: 20)
     }
     
     private func flipCoordinateSystemForCoreText() {

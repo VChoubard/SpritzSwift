@@ -13,13 +13,12 @@ import SpritzSwift
 
 class MainViewController: UIViewController {
     
-    var mainView = MainView(frame: CGRect(x: 20, y: 20, width: 200, height: 40 ))
+    var mainView = MainView()
 
     private var manager = SSManager(withText: "Welcome to SpritzSwift! Spritz is a brand new revolutionary reading method that will help you to improve your number of words per minute. Take a look at SpritzSwift!", andWordPerMinute: 250)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        mainView = MainView(frame: CGRect(x: 20, y: 20, width: 200, height: 40 ))
         
         self.view = mainView
         
