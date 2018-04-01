@@ -15,7 +15,7 @@ class MainViewController: UIViewController {
     
     var mainView = MainView()
 
-    private var manager = SSManager(withText: "Welcome to SpritzSwift! Spritz is a brand new revolutionary reading method that will help you to improve your number of words per minute. Take a look at SpritzSwift!", andWordPerMinute: 250)
+    private var manager = SpritzSwiftManager(withText: "Welcome to SpritzSwift! Spritz is a brand new revolutionary reading method that will help you to improve your number of words per minute. Take a look at SpritzSwift!", andWordPerMinute: 250)
     
     override func viewDidLoad() {
         super.viewDidLoad()

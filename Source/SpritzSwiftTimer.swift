@@ -8,7 +8,7 @@
 
 import Foundation
 
-class SSTimer {
+class SpritzSwiftTimer {
     let timer: Timer
     var pauseDate: Date?
     var previousFireDate: Date?

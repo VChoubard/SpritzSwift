@@ -8,9 +8,9 @@
 
 import UIKit
 
-public class SSView: UIView {
+public class SpritzSwiftView: UIView {
     
-    private var ssLabel = SSLabel()
+    private var ssLabel = SpritzSwiftLabel()
     private var markerLength: CGFloat = 5.0
     
     public var markerOffset: CGFloat = 0.0
@@ -19,9 +19,9 @@ public class SSView: UIView {
     public var textColor = UIColor.black
     public var textFont = UIFont.systemFont(ofSize: 20)
     
-    public var initWord = SSWord(withWord: "Spritz")
+    public var initWord = SpritzSwiftWord(withWord: "Spritz")
     
-    public func updateWord(_ word: SSWord) {
+    public func updateWord(_ word: SpritzSwiftWord) {
         ssLabel.word = word
         ssLabel.setNeedsDisplay()
     }
