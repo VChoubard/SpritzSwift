@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        ssView = SSView(frame: CGRect(x: 20, y: 20, width: 200, height: 40 ), delegate: self)
+        ssView = SSView(frame: CGRect(x: 20, y: 20, width: 200, height: 40 ))
         ssView!.initWord = SSWord(withWord: "Spritz")
         ssView!.backgroundColor = .clear
         self.view.addSubview(ssView!)
@@ -102,22 +102,3 @@ class ViewController: UIViewController {
         }
     }
 }
-
-extension ViewController: SSViewPresentationDelegate {
-    func getMarkerOffset() -> CGFloat {
-        return ssView!.frame.size.width/3
-    }
-    func getMarkerLength() -> CGFloat {
-        return 5
-    }
-    func getMarkerColor() -> UIColor {
-        return .red
-    }
-    func getLinesColor() -> UIColor {
-        return .black
-    }
-    func getTextColor() -> UIColor {
-        return .black
-    }
-}
-

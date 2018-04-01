@@ -20,7 +20,6 @@
 		5B5F15C0206D73CD008745CC /* SSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F156E206D72C2008745CC /* SSManager.swift */; };
 		5B5F15C1206D73CD008745CC /* SSTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F156F206D72C2008745CC /* SSTimer.swift */; };
 		5B5F15C2206D73CD008745CC /* SSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F156C206D72C2008745CC /* SSView.swift */; };
-		5B5F15C3206D73CD008745CC /* SSViewPresentationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F1570206D72C2008745CC /* SSViewPresentationDelegate.swift */; };
 		5B5F15C4206D73CD008745CC /* SSWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F1571206D72C2008745CC /* SSWord.swift */; };
 		5B5F15C6206D7472008745CC /* SpritzSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5F15A2206D73A6008745CC /* SpritzSwift.framework */; };
 /* End PBXBuildFile section */
@@ -69,7 +68,6 @@
 		5B5F156D206D72C2008745CC /* SSLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSLabel.swift; sourceTree = "<group>"; };
 		5B5F156E206D72C2008745CC /* SSManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSManager.swift; sourceTree = "<group>"; };
 		5B5F156F206D72C2008745CC /* SSTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSTimer.swift; sourceTree = "<group>"; };
-		5B5F1570206D72C2008745CC /* SSViewPresentationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSViewPresentationDelegate.swift; sourceTree = "<group>"; };
 		5B5F1571206D72C2008745CC /* SSWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSWord.swift; sourceTree = "<group>"; };
 		5B5F1578206D72DD008745CC /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = SpritzSwiftDemo/Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		5B5F1582206D734B008745CC /* SpritzSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpritzSwift.h; sourceTree = "<group>"; };
@@ -166,7 +164,6 @@
 				5B5F156E206D72C2008745CC /* SSManager.swift */,
 				5B5F156F206D72C2008745CC /* SSTimer.swift */,
 				5B5F156C206D72C2008745CC /* SSView.swift */,
-				5B5F1570206D72C2008745CC /* SSViewPresentationDelegate.swift */,
 				5B5F1571206D72C2008745CC /* SSWord.swift */,
 			);
 			path = Source;
@@ -373,7 +370,6 @@
 				5B5F15C0206D73CD008745CC /* SSManager.swift in Sources */,
 				5B5F15C1206D73CD008745CC /* SSTimer.swift in Sources */,
 				5B5F15C2206D73CD008745CC /* SSView.swift in Sources */,
-				5B5F15C3206D73CD008745CC /* SSViewPresentationDelegate.swift in Sources */,
 				5B5F15C4206D73CD008745CC /* SSWord.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
