@@ -9,7 +9,7 @@
 import UIKit
 import CoreText
 
-class SSLabel: UIView {
+class SpritzSwiftLabel: UIView {
     
     var markerColor: UIColor = UIColor.red
     var textColor: UIColor = UIColor.black
@@ -21,7 +21,7 @@ class SSLabel: UIView {
     private var textVerticalPosition: CGFloat = 15
     private var textHorizontalPosition: CGFloat = 0
     
-    var word = SSWord(withWord: " ")
+    var word = SpritzSwiftWord(withWord: " ")
     
     override func layoutSubviews() {
         backgroundColor = .clear
