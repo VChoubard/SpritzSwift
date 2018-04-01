@@ -23,6 +23,11 @@ class SSLabel: UIView {
     
     var word = SSWord(withWord: " ")
     
+    init() {
+        super.init(frame: CGRect.zero)
+        initParameters()
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         initParameters()
