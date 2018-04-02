@@ -14,7 +14,7 @@ class SpritzSwiftLabel: UIView {
     var markerColor: UIColor = UIColor.red
     var textColor: UIColor = UIColor.black
     var textFont: UIFont = UIFont.systemFont(ofSize: 20)
-    var markerOffset: CGFloat = 66.666
+    var markerOffset: CGFloat = UIScreen.main.bounds.width/3
     private var headerWidth: CGFloat = 0
     private var tailWidth: CGFloat = 0
     private var markerWidth: CGFloat = 0

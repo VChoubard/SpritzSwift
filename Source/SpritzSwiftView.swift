@@ -13,7 +13,7 @@ public class SpritzSwiftView: UIView {
     private var ssLabel = SpritzSwiftLabel()
     private var markerLength: CGFloat = 5.0
     
-    public var markerOffset: CGFloat = 0.0
+    public var markerOffset = UIScreen.main.bounds.width/3
     public var markerColor = UIColor.red
     public var markingLinesColor = UIColor.black
     public var textColor = UIColor.black

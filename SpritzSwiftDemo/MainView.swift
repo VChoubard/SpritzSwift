@@ -63,19 +63,21 @@ class MainView: UIView {
     private func setupSpritzView() {
         ssView.initWord = SpritzSwiftWord(withWord: "Spritz")
         ssView.backgroundColor = .clear
-//        ssView.markingLinesColor = .red
-//        ssView.markerColor = .blue
-        ssView.textFont = UIFont.systemFont(ofSize: 60)
-//        ssView.textColor = .blue
+        ssView.markingLinesColor = .red
+        ssView.markerColor = .blue
+        ssView.textFont = UIFont.systemFont(ofSize: 40)
+        ssView.textColor = .blue
         self.addSubview(ssView)
         
         ssView.snp.makeConstraints { (make) -> Void in
-            make.top.equalTo(self.snp.top).inset(60)
+//            make.top.equalTo(self.snp.top).inset(60)
 //            make.height.equalTo(40)
             make.left.equalTo(self.snp.left).inset(20)
             make.right.equalTo(self.snp.right).inset(20)
+            make.height.equalTo(60)
+            make.centerY.equalTo(self.snp.centerY)
 //            make.center.equalTo(self)
-            make.bottom.equalTo(self.snp.bottom).inset(60)
+//            make.bottom.equalTo(self.snp.bottom).inset(60)
         }
     }
     
