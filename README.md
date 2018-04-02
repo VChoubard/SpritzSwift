@@ -101,7 +101,6 @@ You can pause and resume your reading just calling these two methods:
 
     manager.resumeReading()
 
-<<<<<<< HEAD
 ###  Presentation
 
 The api of the SpritzSwiftView provides properties to change the appearance of the view
@@ -129,32 +128,6 @@ var textFont: UIFont //Default: UIFont.systemFont(ofSize: 20)
 ```swift
 var textColor: UIColor //Default: UIColor.black
 ```
-=======
-
-###  Presentation
-
-You can implement the  SSViewPresentationDelegate and pass it to the SSView constructor to customize the visual of the SSView
-
-    @objc
-    protocol SSViewPresentationDelegate {
-
-        // Determine the offset of the marker position inside the view.
-        @objc optional func getMarkerOffset() -> CGFloat
-
-        // Determines the color of the letter you're supposed to be focused on.
-        @objc optional func getMarkerColor() -> UIColor
-
-        // Determines the color of the lines around the word.
-        @objc optional func getLinesColor() -> UIColor
-
-        // Determines the color of the text.
-        @objc optional func getTextColor() -> UIColor
-
-        // Determines the font of the text.
-        @objc optional func getTextFont() -> UIFont
-
-    }
->>>>>>> 9e22f3416bbd0e9db541cb2017e96732157029f0
 
 ## Author
 
