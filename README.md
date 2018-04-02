@@ -6,6 +6,15 @@ Spritz reading framework based on AFSpritz.
 
 ![alt text](https://media.giphy.com/media/18Tb56ycWSOg2cDGU2/giphy.gif "Example")
 
+### Features
+
+- [x] Customize speed throught the number of words per minute.
+- [x] Stop the reading.
+- [x] Resume the reading.
+- [x] Restart the reading.
+- [x] Add a little stop when there's a stop on the text (. … : , ! ?).
+- [ ] Let the custom view deal with images
+
 ## Installation
 
 ### Carthage
