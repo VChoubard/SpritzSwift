@@ -13,8 +13,6 @@
 		5B5F1579206D72DD008745CC /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5F1578206D72DD008745CC /* SnapKit.framework */; };
 		5B5F157A206D72DD008745CC /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5F1578206D72DD008745CC /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5B5F15AB206D73A6008745CC /* SpritzSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5F15A2206D73A6008745CC /* SpritzSwift.framework */; };
-		5B5F15B2206D73A6008745CC /* SpritzSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F15B1206D73A6008745CC /* SpritzSwiftTests.swift */; };
-		5B5F15B4206D73A6008745CC /* SpritzSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B5F15A4206D73A6008745CC /* SpritzSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B5F15C0206D73CD008745CC /* SpritzSwiftManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F156E206D72C2008745CC /* SpritzSwiftManager.swift */; };
 		5B5F15C1206D73CD008745CC /* SpritzSwiftTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F156F206D72C2008745CC /* SpritzSwiftTimer.swift */; };
 		5B5F15C4206D73CD008745CC /* SpritzSwiftWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F1571206D72C2008745CC /* SpritzSwiftWord.swift */; };
@@ -71,14 +69,8 @@
 		5B5F1578206D72DD008745CC /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = SpritzSwiftDemo/Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		5B5F1582206D734B008745CC /* SpritzSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpritzSwift.h; sourceTree = "<group>"; };
 		5B5F1583206D734B008745CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B5F158F206D734B008745CC /* SpritzSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpritzSwiftTests.swift; sourceTree = "<group>"; };
-		5B5F1591206D734B008745CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B5F15A2206D73A6008745CC /* SpritzSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpritzSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B5F15A4206D73A6008745CC /* SpritzSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpritzSwift.h; sourceTree = "<group>"; };
-		5B5F15A5206D73A6008745CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B5F15AA206D73A6008745CC /* SpritzSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpritzSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B5F15B1206D73A6008745CC /* SpritzSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpritzSwiftTests.swift; sourceTree = "<group>"; };
-		5B5F15B3206D73A6008745CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B5F15C7206D75C8008745CC /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		5B5F15C9206D75F7008745CC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		5B5F15CB207115AB008745CC /* SpritzSwiftLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpritzSwiftLabel.swift; sourceTree = "<group>"; };
@@ -120,9 +112,6 @@
 				5B5F1543206D67CD008745CC /* SpritzSwiftDemo */,
 				5B5F1558206D67CD008745CC /* SpritzSwiftTests */,
 				5B5F1581206D734B008745CC /* SpritzSwift */,
-				5B5F158E206D734B008745CC /* SpritzSwiftTests */,
-				5B5F15A3206D73A6008745CC /* SpritzSwift */,
-				5B5F15B0206D73A6008745CC /* SpritzSwiftTests */,
 				5B5F1542206D67CD008745CC /* Products */,
 				5B5F15C5206D7472008745CC /* Frameworks */,
 			);
@@ -181,33 +170,6 @@
 			path = SpritzSwift;
 			sourceTree = "<group>";
 		};
-		5B5F158E206D734B008745CC /* SpritzSwiftTests */ = {
-			isa = PBXGroup;
-			children = (
-				5B5F158F206D734B008745CC /* SpritzSwiftTests.swift */,
-				5B5F1591206D734B008745CC /* Info.plist */,
-			);
-			path = SpritzSwiftTests;
-			sourceTree = "<group>";
-		};
-		5B5F15A3206D73A6008745CC /* SpritzSwift */ = {
-			isa = PBXGroup;
-			children = (
-				5B5F15A4206D73A6008745CC /* SpritzSwift.h */,
-				5B5F15A5206D73A6008745CC /* Info.plist */,
-			);
-			path = SpritzSwift;
-			sourceTree = "<group>";
-		};
-		5B5F15B0206D73A6008745CC /* SpritzSwiftTests */ = {
-			isa = PBXGroup;
-			children = (
-				5B5F15B1206D73A6008745CC /* SpritzSwiftTests.swift */,
-				5B5F15B3206D73A6008745CC /* Info.plist */,
-			);
-			path = SpritzSwiftTests;
-			sourceTree = "<group>";
-		};
 		5B5F15C5206D7472008745CC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,7 +184,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B5F15B4206D73A6008745CC /* SpritzSwift.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,7 +343,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B5F15B2206D73A6008745CC /* SpritzSwiftTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
