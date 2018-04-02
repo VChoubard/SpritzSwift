@@ -58,10 +58,6 @@ Then, call the block that will start the reading and sending you a word to show 
         }
     }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 9e22f3416bbd0e9db541cb2017e96732157029f0
 ### Checking the status
 
     enum Status {
