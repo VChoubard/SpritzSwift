@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5B5F1545206D67CD008745CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F1544206D67CD008745CC /* AppDelegate.swift */; };
-		5B5F1547206D67CD008745CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F1546206D67CD008745CC /* ViewController.swift */; };
 		5B5F154C206D67CD008745CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B5F154B206D67CD008745CC /* Assets.xcassets */; };
 		5B5F154F206D67CD008745CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B5F154D206D67CD008745CC /* LaunchScreen.storyboard */; };
 		5B5F1579206D72DD008745CC /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5F1578206D72DD008745CC /* SnapKit.framework */; };
@@ -16,13 +15,14 @@
 		5B5F15AB206D73A6008745CC /* SpritzSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5F15A2206D73A6008745CC /* SpritzSwift.framework */; };
 		5B5F15B2206D73A6008745CC /* SpritzSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F15B1206D73A6008745CC /* SpritzSwiftTests.swift */; };
 		5B5F15B4206D73A6008745CC /* SpritzSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B5F15A4206D73A6008745CC /* SpritzSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B5F15BF206D73CD008745CC /* SSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F156D206D72C2008745CC /* SSLabel.swift */; };
-		5B5F15C0206D73CD008745CC /* SSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F156E206D72C2008745CC /* SSManager.swift */; };
-		5B5F15C1206D73CD008745CC /* SSTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F156F206D72C2008745CC /* SSTimer.swift */; };
-		5B5F15C2206D73CD008745CC /* SSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F156C206D72C2008745CC /* SSView.swift */; };
-		5B5F15C3206D73CD008745CC /* SSViewPresentationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F1570206D72C2008745CC /* SSViewPresentationDelegate.swift */; };
-		5B5F15C4206D73CD008745CC /* SSWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F1571206D72C2008745CC /* SSWord.swift */; };
+		5B5F15C0206D73CD008745CC /* SpritzSwiftManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F156E206D72C2008745CC /* SpritzSwiftManager.swift */; };
+		5B5F15C1206D73CD008745CC /* SpritzSwiftTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F156F206D72C2008745CC /* SpritzSwiftTimer.swift */; };
+		5B5F15C4206D73CD008745CC /* SpritzSwiftWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F1571206D72C2008745CC /* SpritzSwiftWord.swift */; };
 		5B5F15C6206D7472008745CC /* SpritzSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5F15A2206D73A6008745CC /* SpritzSwift.framework */; };
+		5B5F15C8206D75C8008745CC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F15C7206D75C8008745CC /* MainViewController.swift */; };
+		5B5F15CA206D75F7008745CC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F15C9206D75F7008745CC /* MainView.swift */; };
+		5B5F15CD207115F2008745CC /* SpritzSwiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F156C206D72C2008745CC /* SpritzSwiftView.swift */; };
+		5B5F15CE207115F8008745CC /* SpritzSwiftLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F15CB207115AB008745CC /* SpritzSwiftLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,18 +59,15 @@
 /* Begin PBXFileReference section */
 		5B5F1541206D67CD008745CC /* SpritzSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpritzSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B5F1544206D67CD008745CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5B5F1546206D67CD008745CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5B5F154B206D67CD008745CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B5F154E206D67CD008745CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B5F1550206D67CD008745CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B5F1559206D67CD008745CC /* SpritzSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpritzSwiftTests.swift; sourceTree = "<group>"; };
 		5B5F155B206D67CD008745CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B5F156C206D72C2008745CC /* SSView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSView.swift; sourceTree = "<group>"; };
-		5B5F156D206D72C2008745CC /* SSLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSLabel.swift; sourceTree = "<group>"; };
-		5B5F156E206D72C2008745CC /* SSManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSManager.swift; sourceTree = "<group>"; };
-		5B5F156F206D72C2008745CC /* SSTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSTimer.swift; sourceTree = "<group>"; };
-		5B5F1570206D72C2008745CC /* SSViewPresentationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSViewPresentationDelegate.swift; sourceTree = "<group>"; };
-		5B5F1571206D72C2008745CC /* SSWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSWord.swift; sourceTree = "<group>"; };
+		5B5F156C206D72C2008745CC /* SpritzSwiftView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpritzSwiftView.swift; sourceTree = "<group>"; };
+		5B5F156E206D72C2008745CC /* SpritzSwiftManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpritzSwiftManager.swift; sourceTree = "<group>"; };
+		5B5F156F206D72C2008745CC /* SpritzSwiftTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpritzSwiftTimer.swift; sourceTree = "<group>"; };
+		5B5F1571206D72C2008745CC /* SpritzSwiftWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpritzSwiftWord.swift; sourceTree = "<group>"; };
 		5B5F1578206D72DD008745CC /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = SpritzSwiftDemo/Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		5B5F1582206D734B008745CC /* SpritzSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpritzSwift.h; sourceTree = "<group>"; };
 		5B5F1583206D734B008745CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,6 +79,9 @@
 		5B5F15AA206D73A6008745CC /* SpritzSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpritzSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B5F15B1206D73A6008745CC /* SpritzSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpritzSwiftTests.swift; sourceTree = "<group>"; };
 		5B5F15B3206D73A6008745CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B5F15C7206D75C8008745CC /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		5B5F15C9206D75F7008745CC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		5B5F15CB207115AB008745CC /* SpritzSwiftLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpritzSwiftLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,8 +141,9 @@
 		5B5F1543206D67CD008745CC /* SpritzSwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5B5F15C7206D75C8008745CC /* MainViewController.swift */,
+				5B5F15C9206D75F7008745CC /* MainView.swift */,
 				5B5F1544206D67CD008745CC /* AppDelegate.swift */,
-				5B5F1546206D67CD008745CC /* ViewController.swift */,
 				5B5F154B206D67CD008745CC /* Assets.xcassets */,
 				5B5F154D206D67CD008745CC /* LaunchScreen.storyboard */,
 				5B5F1550206D67CD008745CC /* Info.plist */,
@@ -162,12 +163,11 @@
 		5B5F1564206D6A7E008745CC /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				5B5F156D206D72C2008745CC /* SSLabel.swift */,
-				5B5F156E206D72C2008745CC /* SSManager.swift */,
-				5B5F156F206D72C2008745CC /* SSTimer.swift */,
-				5B5F156C206D72C2008745CC /* SSView.swift */,
-				5B5F1570206D72C2008745CC /* SSViewPresentationDelegate.swift */,
-				5B5F1571206D72C2008745CC /* SSWord.swift */,
+				5B5F15CB207115AB008745CC /* SpritzSwiftLabel.swift */,
+				5B5F156E206D72C2008745CC /* SpritzSwiftManager.swift */,
+				5B5F156F206D72C2008745CC /* SpritzSwiftTimer.swift */,
+				5B5F156C206D72C2008745CC /* SpritzSwiftView.swift */,
+				5B5F1571206D72C2008745CC /* SpritzSwiftWord.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -360,7 +360,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B5F1547206D67CD008745CC /* ViewController.swift in Sources */,
+				5B5F15C8206D75C8008745CC /* MainViewController.swift in Sources */,
+				5B5F15CA206D75F7008745CC /* MainView.swift in Sources */,
 				5B5F1545206D67CD008745CC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,12 +370,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B5F15BF206D73CD008745CC /* SSLabel.swift in Sources */,
-				5B5F15C0206D73CD008745CC /* SSManager.swift in Sources */,
-				5B5F15C1206D73CD008745CC /* SSTimer.swift in Sources */,
-				5B5F15C2206D73CD008745CC /* SSView.swift in Sources */,
-				5B5F15C3206D73CD008745CC /* SSViewPresentationDelegate.swift in Sources */,
-				5B5F15C4206D73CD008745CC /* SSWord.swift in Sources */,
+				5B5F15CD207115F2008745CC /* SpritzSwiftView.swift in Sources */,
+				5B5F15C0206D73CD008745CC /* SpritzSwiftManager.swift in Sources */,
+				5B5F15CE207115F8008745CC /* SpritzSwiftLabel.swift in Sources */,
+				5B5F15C1206D73CD008745CC /* SpritzSwiftTimer.swift in Sources */,
+				5B5F15C4206D73CD008745CC /* SpritzSwiftWord.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

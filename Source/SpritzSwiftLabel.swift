@@ -9,35 +9,23 @@
 import UIKit
 import CoreText
 
-class SSLabel: UIView {
+class SpritzSwiftLabel: UIView {
     
-    private var markerColor: UIColor = UIColor.red
-    private var textColor: UIColor = UIColor.black
-    private var textFont: UIFont = UIFont.systemFont(ofSize: 20)
-    private var markerOffset: CGFloat = 0
+    var markerColor: UIColor = UIColor.red
+    var textColor: UIColor = UIColor.black
+    var textFont: UIFont = UIFont.systemFont(ofSize: 20)
+    var markerOffset: CGFloat = UIScreen.main.bounds.width/3
+
     private var headerWidth: CGFloat = 0
     private var tailWidth: CGFloat = 0
     private var markerWidth: CGFloat = 0
     private var textVerticalPosition: CGFloat = 15
     private var textHorizontalPosition: CGFloat = 0
-    private var delegate: SSViewPresentationDelegate?
     
-    var word = SSWord(withWord: " ")
+    var word = SpritzSwiftWord(withWord: " ")
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        initParameters()
-    }
-    
-    init(frame: CGRect, delegate: SSViewPresentationDelegate?) {
-        super.init(frame: frame)
-        self.delegate = delegate
-        initParameters()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        initParameters()
+    override func layoutSubviews() {
+        backgroundColor = .clear
     }
     
     override func draw(_ rect: CGRect) {
@@ -52,8 +40,8 @@ class SSLabel: UIView {
         
         //create the attstring
         let attString = NSMutableAttributedString(string: word.word)
-        attString.addAttribute(NSAttributedStringKey.foregroundColor, value: self.delegate?.getMarkerColor?() ?? markerColor , range:NSMakeRange(self.word.markerPosition, 1))
-        attString.addAttribute(NSAttributedStringKey.font, value: self.delegate?.getTextFont?() ?? self.textFont, range: NSMakeRange(0, self.word.word.count))
+        attString.addAttribute(NSAttributedStringKey.foregroundColor, value: markerColor , range:NSMakeRange(self.word.markerPosition, 1))
+        attString.addAttribute(NSAttributedStringKey.font, value: self.textFont, range: NSMakeRange(0, self.word.word.count))
 
     
         // create the frame
@@ -113,9 +101,9 @@ class SSLabel: UIView {
                         (runsCount == 1 && self.word.markerPosition == 0) ||
                         (runsCount == 2 && self.word.markerPosition != 0 && runIndex > 0) ||
                         (runsCount == 2 && self.word.markerPosition == 0 && runIndex == 0) {
-                        context!.setFillColor(self.delegate?.getMarkerColor?().cgColor ?? self.markerColor.cgColor)
+                        context!.setFillColor(self.markerColor.cgColor)
                     } else {
-                        context!.setFillColor(self.delegate?.getTextColor?().cgColor ?? self.textColor.cgColor)
+                        context!.setFillColor(self.textColor.cgColor)
                     }
                     
                     position = CGPoint(x: position.x + textHorizontalPosition,y: position.y + textVerticalPosition)
@@ -132,15 +120,6 @@ class SSLabel: UIView {
         }
     }
     
-    private func initParameters() {
-        self.backgroundColor = .clear
-        markerOffset = self.frame.size.width/3
-        textVerticalPosition = 15
-        markerColor = UIColor.red
-        textColor = UIColor.black
-        textFont = UIFont.systemFont(ofSize: 20)
-    }
-    
     private func flipCoordinateSystemForCoreText() {
         let context = UIGraphicsGetCurrentContext()
         context!.textMatrix = CGAffineTransform.identity
@@ -149,7 +128,7 @@ class SSLabel: UIView {
     }
     
     private func recomputeTextHorizontalPosition() {
-        let markerOffset = self.delegate?.getMarkerOffset?() ?? self.markerOffset
+        let markerOffset = self.markerOffset
         textHorizontalPosition = markerOffset - (headerWidth + markerWidth/2.0)
     }
 }

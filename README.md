@@ -19,7 +19,7 @@ $ brew update
 $ brew install carthage
 ```
 
-To integrate SpritzSwift into your Xcode project using Carthage, specify it in your `Cartfile`:
+To integrate SnapKit into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
 github "VChoubard/SpritzSwift" ~> 1.0.0
@@ -57,7 +57,6 @@ Then, call the block that will start the reading and sending you a word to show 
             self.ssView?.updateWord(word!)
         }
     }
-
 
 ### Checking the status
 
@@ -98,30 +97,33 @@ You can pause and resume your reading just calling these two methods:
 
     manager.resumeReading()
 
-
 ###  Presentation
 
-You can implement the  SSViewPresentationDelegate and pass it to the SSView constructor to customize the visual of the SSView
+The api of the SpritzSwiftView provides properties to change the appearance of the view
 
-    @objc
-    protocol SSViewPresentationDelegate {
+> the color of the lines on the top and bottom of the view.
 
-        // Determine the offset of the marker position inside the view.
-        @objc optional func getMarkerOffset() -> CGFloat
+```swift
+var markingLinesColor: UIColor //Default: UIColor.black
+```
 
-        // Determines the color of the letter you're supposed to be focused on.
-        @objc optional func getMarkerColor() -> UIColor
+> the color of the marker that center the word.
 
-        // Determines the color of the lines around the word.
-        @objc optional func getLinesColor() -> UIColor
+```swift
+var markerColor: UIColor //Default: UIColor.red
+```
 
-        // Determines the color of the text.
-        @objc optional func getTextColor() -> UIColor
+> the font of the text.
 
-        // Determines the font of the text.
-        @objc optional func getTextFont() -> UIFont
+```swift
+var textFont: UIFont //Default: UIFont.systemFont(ofSize: 20)
+```
 
-    }
+> the color of the texxt.
+
+```swift
+var textColor: UIColor //Default: UIColor.black
+```
 
 ## Author
 

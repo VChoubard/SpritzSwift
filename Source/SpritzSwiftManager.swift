@@ -8,9 +8,9 @@
 
 import Foundation
 
-public class SSManager {
+public class SpritzSwiftManager {
     
-    public typealias StatusBlock = (_ words: SSWord?, _ finished: Bool) -> ()
+    public typealias StatusBlock = (_ words: SpritzSwiftWord?, _ finished: Bool) -> ()
     
     public enum Status {
         case stopped
@@ -20,10 +20,10 @@ public class SSManager {
     }
     
     private var text: String
-    private var words = [SSWord]()
+    private var words = [SpritzSwiftWord]()
     private var current: Int = 0
     private var speed: Double
-    private var timer: SSTimer?
+    private var timer: SpritzSwiftTimer?
     private(set) var status = Status.notStarted
     
     public init(withText text: String, andWordPerMinute wpm: Int?) {
@@ -37,9 +37,10 @@ public class SSManager {
     public func startReading(completion: @escaping StatusBlock) {
         current = 0
 
-        guard let timer = timer, timer.isValid, status != .stopped else {
+
+        guard let timer = timer, timer.isValid, status == .reading else {
             self.timer?.invalidate()
-            self.timer = SSTimer(timer: Timer.scheduledTimer(withTimeInterval: self.speed, repeats: true, block: { (timer) in
+            self.timer = SpritzSwiftTimer(timer: Timer.scheduledTimer(withTimeInterval: self.speed, repeats: true, block: { (timer) in
                 if (self.current != self.words.count) {
                     if (self.current > 0) {
                         var end = Double(clock()) + (self.speed * Double(CLOCKS_PER_SEC))
@@ -102,10 +103,10 @@ public class SSManager {
         }
     }
     
-    private func package(ofWords words: [String]) -> [SSWord]{
-        var packageOfWords = [SSWord]()
+    private func package(ofWords words: [String]) -> [SpritzSwiftWord]{
+        var packageOfWords = [SpritzSwiftWord]()
         for word in words {
-            packageOfWords.append(SSWord(withWord: word))
+            packageOfWords.append(SpritzSwiftWord(withWord: word))
         }
     
         return packageOfWords
