@@ -10,7 +10,7 @@ Spritz reading framework based on AFSpritz.
 
 ### Carthage
 
-[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks.
+[Carthage](https://github.com/Carthage/Carthage) is a decentralised dependency manager that builds your dependencies and provides you with binary frameworks.
 
 You can install Carthage with [Homebrew](http://brew.sh/) using the following command:
 
@@ -22,7 +22,7 @@ $ brew install carthage
 To integrate SnapKit into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "VChoubard/SpritzSwift" ~> 1.0.0
+github "VChoubard/SpritzSwift" ~> 1.1.0
 ```
 
 Run `carthage update` to build the framework.
