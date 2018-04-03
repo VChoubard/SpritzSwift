@@ -1,0 +1,4 @@
+framework module SpritzSwift {
+    header "SpritzSwift-Swift.h"
+    requires objc
+}

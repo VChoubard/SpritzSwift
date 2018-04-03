@@ -7,16 +7,16 @@
       buildImplicitDependencies = "YES">
       <BuildActionEntries>
          <BuildActionEntry
-            buildForTesting = "YES"
+            buildForTesting = "NO"
             buildForRunning = "YES"
             buildForProfiling = "YES"
             buildForArchiving = "YES"
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5B5F1540206D67CD008745CC"
-               BuildableName = "SpritzSwiftDemo.app"
-               BlueprintName = "SpritzSwiftDemo"
+               BlueprintIdentifier = "5B5F15A1206D73A6008745CC"
+               BuildableName = "SpritzSwift.framework"
+               BlueprintName = "SpritzSwift"
                ReferencedContainer = "container:SpritzSwift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,33 +29,13 @@
       language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5B5F15A9206D73A6008745CC"
-               BuildableName = "SpritzSwiftTests.xctest"
-               BlueprintName = "SpritzSwiftTests"
-               ReferencedContainer = "container:SpritzSwift.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5B5F15A9206D73A6008745CC"
-               BuildableName = "SpritzSwiftTests.xctest"
-               BlueprintName = "SpritzSwiftTests"
-               ReferencedContainer = "container:SpritzSwift.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5B5F1540206D67CD008745CC"
-            BuildableName = "SpritzSwiftDemo.app"
-            BlueprintName = "SpritzSwiftDemo"
+            BlueprintIdentifier = "5B5F15A1206D73A6008745CC"
+            BuildableName = "SpritzSwift.framework"
+            BlueprintName = "SpritzSwift"
             ReferencedContainer = "container:SpritzSwift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -73,16 +53,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5B5F1540206D67CD008745CC"
-            BuildableName = "SpritzSwiftDemo.app"
-            BlueprintName = "SpritzSwiftDemo"
+            BlueprintIdentifier = "5B5F15A1206D73A6008745CC"
+            BuildableName = "SpritzSwift.framework"
+            BlueprintName = "SpritzSwift"
             ReferencedContainer = "container:SpritzSwift.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -92,16 +71,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5B5F1540206D67CD008745CC"
-            BuildableName = "SpritzSwiftDemo.app"
-            BlueprintName = "SpritzSwiftDemo"
+            BlueprintIdentifier = "5B5F15A1206D73A6008745CC"
+            BuildableName = "SpritzSwift.framework"
+            BlueprintName = "SpritzSwift"
             ReferencedContainer = "container:SpritzSwift.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

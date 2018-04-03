@@ -4,13 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>SpritzSwift.xcscheme</key>
+		<key>SpritzSwift.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
 		<key>SpritzSwiftDemo.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
@@ -23,6 +25,11 @@
 			<true/>
 		</dict>
 		<key>5B5F1554206D67CD008745CC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5B5F15A1206D73A6008745CC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

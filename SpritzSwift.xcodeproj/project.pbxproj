@@ -10,13 +10,10 @@
 		5B5F1545206D67CD008745CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F1544206D67CD008745CC /* AppDelegate.swift */; };
 		5B5F154C206D67CD008745CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B5F154B206D67CD008745CC /* Assets.xcassets */; };
 		5B5F154F206D67CD008745CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B5F154D206D67CD008745CC /* LaunchScreen.storyboard */; };
-		5B5F1579206D72DD008745CC /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5F1578206D72DD008745CC /* SnapKit.framework */; };
-		5B5F157A206D72DD008745CC /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5F1578206D72DD008745CC /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5B5F15AB206D73A6008745CC /* SpritzSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5F15A2206D73A6008745CC /* SpritzSwift.framework */; };
 		5B5F15C0206D73CD008745CC /* SpritzSwiftManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F156E206D72C2008745CC /* SpritzSwiftManager.swift */; };
 		5B5F15C1206D73CD008745CC /* SpritzSwiftTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F156F206D72C2008745CC /* SpritzSwiftTimer.swift */; };
 		5B5F15C4206D73CD008745CC /* SpritzSwiftWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F1571206D72C2008745CC /* SpritzSwiftWord.swift */; };
-		5B5F15C6206D7472008745CC /* SpritzSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5F15A2206D73A6008745CC /* SpritzSwift.framework */; };
 		5B5F15C8206D75C8008745CC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F15C7206D75C8008745CC /* MainViewController.swift */; };
 		5B5F15CA206D75F7008745CC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F15C9206D75F7008745CC /* MainView.swift */; };
 		5B5F15CD207115F2008745CC /* SpritzSwiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F156C206D72C2008745CC /* SpritzSwiftView.swift */; };
@@ -39,20 +36,6 @@
 			remoteInfo = SpritzSwiftDemo;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		5B5F156B206D6FD2008745CC /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				5B5F157A206D72DD008745CC /* SnapKit.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5B5F1541206D67CD008745CC /* SpritzSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpritzSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,8 +64,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B5F15C6206D7472008745CC /* SpritzSwift.framework in Frameworks */,
-				5B5F1579206D72DD008745CC /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +178,6 @@
 				5B5F153D206D67CD008745CC /* Sources */,
 				5B5F153E206D67CD008745CC /* Frameworks */,
 				5B5F153F206D67CD008745CC /* Resources */,
-				5B5F156B206D6FD2008745CC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
