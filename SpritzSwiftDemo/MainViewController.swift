@@ -15,11 +15,15 @@ class MainViewController: UIViewController {
     
     var mainView = MainView()
 
-    private var manager = SpritzSwiftManager(withText: "Welcome to SpritzSwift! Spritz is a brand new revolutionary reading method that will help you to improve your number of words per minute. Take a look at SpritzSwift!", andWordPerMinute: 250)
+    private var spritzSwiftViewController: SpritzSwiftViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        spritzSwiftViewController = SpritzSwiftRouter.setupModule()
+        spritzSwiftViewController?.setup(withText: "Welcome to SpritzSwift! Spritz is a brand new revolutionary reading method that will help you to improve your number of words per minute. Take a look at SpritzSwift!", wordPerMinute: 250)
+        
+        mainView.ssView = spritzSwiftViewController!.view
         self.view = mainView
         
         mainView.playButton.addTarget(self, action: #selector(toggleSpritz) , for: UIControlEvents.touchUpInside)
@@ -29,20 +33,16 @@ class MainViewController: UIViewController {
 
     @objc
     func pauseSpritz() {
-        manager.pauseReading()
+        spritzSwiftViewController?.tapOnPause()
     }
     
     @objc
     func resumeSpritz() {
-        manager.resumeReading()
+        spritzSwiftViewController?.tapOnPlay()
     }
     
     @objc
     func toggleSpritz() {
-        manager.startReading { (word, finished) in
-            if !finished {
-                self.mainView.ssView.updateWord(word!)
-            }
-        }
+        spritzSwiftViewController?.tapOnPlay()
     }
 }

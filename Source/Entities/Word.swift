@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class SpritzSwiftWord {
+public class Word {
     private static let minimum = 0.18
     private static let maximum = 0.3
     private static let minTreshold = 4.0
@@ -28,14 +28,14 @@ public class SpritzSwiftWord {
     private func calculateDelay() -> TimeInterval {
         let length = Double(self.word.count)
         
-        if (length < SpritzSwiftWord.minTreshold) {
-            return SpritzSwiftWord.minimum
+        if (length < Word.minTreshold) {
+            return Word.minimum
         }
-        if (length > SpritzSwiftWord.maxTreshold) {
-            return SpritzSwiftWord.maximum
+        if (length > Word.maxTreshold) {
+            return Word.maximum
         }
         
-        return SpritzSwiftWord.minimum + ((SpritzSwiftWord.maximum - SpritzSwiftWord.minimum)/(SpritzSwiftWord.maxTreshold - SpritzSwiftWord.minTreshold))
+        return Word.minimum + ((Word.maximum - Word.minimum)/(Word.maxTreshold - Word.minTreshold))
     }
     
     private func getReaderMarkerPosition() -> Int {

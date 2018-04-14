@@ -22,7 +22,7 @@ class SpritzSwiftLabel: UIView {
     private var textVerticalPosition: CGFloat = 15
     private var textHorizontalPosition: CGFloat = 0
     
-    var word = SpritzSwiftWord(withWord: " ")
+    var word = Word(withWord: " ")
     
     override func layoutSubviews() {
         backgroundColor = .clear

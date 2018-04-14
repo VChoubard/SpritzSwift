@@ -12,7 +12,7 @@ import SpritzSwift
 
 class MainView: UIView {
     
-    var ssView = SpritzSwiftView()
+    var ssView = UIView()
     let playButton = UIButton()
     let pauseButton = UIButton()
     let resumeButton = UIButton()
@@ -61,12 +61,11 @@ class MainView: UIView {
     }
     
     private func setupSpritzView() {
-        ssView.initWord = SpritzSwiftWord(withWord: "Spritz")
-        ssView.backgroundColor = .clear
-        ssView.markingLinesColor = .black
-        ssView.markerColor = .red
-        ssView.textFont = UIFont.systemFont(ofSize: 40)
-        ssView.textColor = .black
+        ssView.backgroundColor = .white
+//        ssView.markingLinesColor = .black
+//        ssView.markerColor = .red
+//        ssView.textFont = UIFont.systemFont(ofSize: 40)
+//        ssView.textColor = .black
         self.addSubview(ssView)
         
         ssView.snp.makeConstraints { (make) -> Void in

@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class SpritzSwiftView: UIView {
+public class LabelView: UIView {
     
     private var ssLabel = SpritzSwiftLabel()
     private var markerLength: CGFloat = 5.0
