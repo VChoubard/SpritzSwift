@@ -61,7 +61,7 @@ class MainView: UIView {
     }
     
     private func setupSpritzView() {
-        ssView.backgroundColor = .white
+        
 //        ssView.markingLinesColor = .black
 //        ssView.markerColor = .red
 //        ssView.textFont = UIFont.systemFont(ofSize: 40)
